@@ -1,0 +1,56 @@
+<template>
+    <div id="page_container">
+        <nav class="navbar">
+            <div class="cross" v-on:click="showNav = !showNav" v-bind:class="{'show': showNav}">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </div>
+            <div class="icons">
+                <router-link to="/" @click.native="showNav = false"><img src="./assets/icons/nodelogo.png" class="logo"></router-link>
+            </div>
+            <div class="links" v-bind:class="{'show': showNav}">
+				<router-link v-for="item in navbar" :key="item.$index" :to="item.href" @click.native="showNav = false" class="nav-item">{{ item.name }}</router-link>
+            </div>
+        </nav>
+        <router-view></router-view>
+    </div>
+</template>
+
+<script>
+export default {
+name: "app",
+data: function() {
+    return {
+        showNav: false,
+        navbar: [
+            {
+                name: "Alphanode",
+                href: "alphanode"
+            },
+            {
+                name: "Members",
+                href: "members"
+            },
+            {
+                name: "Alumni",
+                href: "alumni"
+            },
+            {
+                name: "Achievements",
+                href: "achievements"
+            }
+        ]
+    };
+},
+created(){
+    setTimeout(() => {
+        document.querySelector('.navbar').style.transform = 'translate(-50%, 0)';
+    }, 0);
+}
+};
+</script>
+
+<style lang="scss">
+@import './sass/navbar';
+</style>

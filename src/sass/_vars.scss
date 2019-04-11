@@ -1,0 +1,23 @@
+//vars
+$nav-height: 72px;
+$cross-height: 30px;
+
+//colors
+$text-dark: #242424;
+$text-light: #ffffff;
+$text-accent-1: #8cc63f;
+$text-accent-2: #7CAE39;
+$text-accent-3: #92c9ff;
+
+$blue-1: #303b82;
+$blue-2: #0A2139;
+
+$desktop-breakpoint: 1025px;
+$tablet-breakpoint: 750px;
+$mobile-breakpoint: 400px;
+
+@mixin below-desktop{
+    @media only screen and (max-width: #{$desktop-breakpoint}){
+        @content;
+    }
+}

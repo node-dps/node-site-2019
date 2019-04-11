@@ -1,0 +1,158 @@
+@import '_common';
+
+.landing{
+    .boxes{
+        display: block;
+        position: absolute;
+        top: 0.5*$nav-height;
+        right: 0;
+        transform: translate(35vw,0);
+        width: 35vw;
+        height: 80vh;
+        background-color: $blue-2;
+        border-radius: 10px 0 0 10px;
+
+        transition: transform 0.8s ease;
+        opacity: 0;
+
+        .box-front{
+            display: flex;
+            position: absolute;
+            top: 15%;
+            transform: translate(0,0);
+            width: 80%;
+            height: 7rem;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: $blue-1;
+            overflow: hidden;
+            border-radius: 8px;
+
+            transition: transform 0.6s 0.3s ease, opacity 0.6s 0.3s ease;
+            opacity: 0;
+            
+            //child stylings separately
+        }
+
+    }
+
+    .text{
+        display: flex;
+        position: absolute;
+        bottom: 18%;
+        left: 10%;
+        width: 100%;
+        height: auto;
+        color: $text-light;
+        font-size: 0.9rem;
+        font-family: 'Montserrat';
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        pointer-events: none;
+
+        transition: opacity 0.6s 0.7s ease;
+        opacity: 0;
+
+        h1{
+            font-size: 1.5rem;
+        }
+
+        span{
+            color: $text-accent-1;
+        }
+
+        p{
+            width: 80%;
+        }
+
+    }
+
+    .scroll-icon{
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        box-sizing: content-box;
+        width: 20px;
+        height: 45px;
+        border: 4px solid #495ACF;
+        border-radius: 120px;
+        opacity: 0;
+        
+        transition: opacity 0.5s ease;
+
+        .wheel{
+            display: block;
+            position: relative;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 8px;
+            height: 18px;
+            background-color: #495ACF;
+            border-radius: 120px;
+            animation: scroll-anim 3s infinite;
+        }
+    }
+}
+
+@keyframes scroll-anim{
+    0%{
+        top: 15%;
+        opacity: 0
+    }
+    20%{
+        top: 45%;
+        opacity: 1;
+    }
+    100%{
+        top: 45%;
+        opacity: 1;
+    }
+}
+
+//styling box-front children
+.box-front{
+    color: $text-light;
+    font-family: 'Montserrat';
+    
+    *{
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .alphanode{
+        margin: 20px 40px;
+        
+        h1{
+            font-size: 2.5rem;
+        }
+
+        span{
+            color: $text-accent-1;
+        }
+
+        sup{
+            font-size: 45%;
+            margin-left: 3px;
+            color: $text-accent-3;
+        }
+        
+        h3{
+            padding-right: 0.5rem;
+            font-size: 1.05rem;
+            text-align: right;
+        }
+    }
+
+    /*.coming-soon{
+        display: block;
+        margin: 15px 40px;
+        margin-left: auto;
+        font-size: 0.65rem;
+        font-style: italic;
+    }*/
+}

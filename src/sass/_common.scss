@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans'); //dev
+@import '_vars';
+
+body{
+    margin: 0;
+    min-height: 120vh; //dev
+    width: 100%;
+    color: $text-dark;
+    font-family: 'Open Sans';
+    font-size: 0.92em;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+*{
+    outline: none;
+    box-sizing: border-box
+}
+
+div#page_container{
+    display: block;
+    min-height: 100vh;
+}
+
+section.first{
+    display: block;
+    position: relative;
+    top: 1.0*$nav-height;
+    width: 100%;
+    height: calc(100vh - 1.0*#{$nav-height});
+    overflow-x: hidden;
+}

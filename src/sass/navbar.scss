@@ -1,0 +1,162 @@
+@import '_common';
+
+.navbar{
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -$nav-height);
+    width: 100%;
+    height: $nav-height;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $text-light;
+    z-index: 3;
+
+    transition: transform 0.5s ease;
+
+    @include below-desktop{
+        height: 100vh;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: transparent;
+    }
+    
+    //the close icon
+    .cross{
+        display: none;
+        z-index: 4;
+
+        @include below-desktop{
+            display: block;
+            position: absolute;
+            top: calc(0.5*#{$nav-height} - 0.5*#{$cross-height});
+            left: calc(0.5*#{$nav-height} - 0.2*#{$cross-height});
+            width: $cross-height;
+            height: $cross-height;
+        }
+
+        .one{
+            display: block;
+            position: absolute;
+            top: 0.2*$cross-height;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 30px;
+            height: 2px;
+            background-color: $blue-2;
+            transition: all 0.2s;
+        }
+        &.show > .one{
+            transform: rotate(-45deg) translate(-16px, -5px);
+        }
+        .two{
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30px;
+            height: 2px;
+            background-color: $blue-2;
+            transition: all 0.2s;
+        }
+        &.show > .two{
+            opacity: 0;
+        }
+        .three{
+            display: block;
+            position: absolute;
+            bottom: 0.2*$cross-height;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 30px;
+            height: 2px;
+            background-color: $blue-2;
+            transition: all 0.2s;
+        }
+        &.show > .three{
+            transform: rotate(45deg) translate(-16px, 5px);
+        }
+    }
+
+    .icons{
+        display: flex;
+        height: $nav-height;
+        width: auto;
+        margin-left: 8%;
+        justify-content: flex-start;
+        align-items: center;
+
+        @include below-desktop{
+            width: 100%;
+            margin: 0;
+            justify-content: center;
+            background-color: $text-light;
+        }
+
+        a{
+            height: 45%;
+        }
+        .logo{
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .links{
+        margin-left: auto;
+        margin-right: 8%;
+
+        @include below-desktop{
+            display: flex;
+            position: relative;
+            transform: translate(-100vw, 0);
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 20px 0;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: $text-light;
+            transition: all 0.2s;
+
+            &.show{
+                transform: translate(0,0);
+            }
+        }
+
+        .nav-item{
+            position: relative;
+            margin: 0 20px;
+            font-weight: normal;
+
+            @include below-desktop{
+                font-size: 1rem;
+                margin: 12px 0;
+            }
+
+            &:hover{
+                color: $blue-1;
+            }
+
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                transform: translate(-50%, 0);
+                top: 100%;
+                left: 50%;
+                width: 0;
+                height: 2px;
+                background-color: currentColor;
+                transition: all 0.2s;
+            }
+
+            &:hover::after{
+                width: 100%;
+            }
+        }
+    }
+}
