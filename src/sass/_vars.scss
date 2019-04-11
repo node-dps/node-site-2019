@@ -11,6 +11,7 @@ $text-accent-3: #92c9ff;
 
 $blue-1: #303b82;
 $blue-2: #0A2139;
+$blue-3: #8a5ade26;
 
 $desktop-breakpoint: 1025px;
 $tablet-breakpoint: 750px;
@@ -18,6 +19,12 @@ $mobile-breakpoint: 400px;
 
 @mixin below-desktop{
     @media only screen and (max-width: #{$desktop-breakpoint}){
+        @content;
+    }
+}
+
+@mixin below-tablet{
+    @media only screen and (max-width: #{$tablet-breakpoint}){
         @content;
     }
 }

@@ -1,6 +1,24 @@
 @import '_common';
 
-.landing{
+
+//landing section
+.landing.first{
+    @include below-desktop{
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    .graphic{
+        display: block;
+        position: relative;
+        width: 56.25vw;
+        height: calc(100vh - 1.0*#{$nav-height});
+
+        @include below-desktop{
+            width: 100vw;
+        }
+    }
+
     .boxes{
         display: block;
         position: absolute;
@@ -8,19 +26,39 @@
         right: 0;
         transform: translate(35vw,0);
         width: 35vw;
-        height: 80vh;
+        max-width: 500px;
+        min-height: 80vh;
         background-color: $blue-2;
         border-radius: 10px 0 0 10px;
+        padding: 70px 0;
 
         transition: transform 0.8s ease;
         opacity: 0;
 
+        @include below-desktop{
+            position: relative;
+            top: 0;
+            width: 100vw;
+            max-width: 100vw;
+            min-height: 50vh;
+            border-radius: 0px;
+            // box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            transform: translate(0,0);
+        }
+
+        #particles-js{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         .box-front{
             display: flex;
-            position: absolute;
-            top: 15%;
-            transform: translate(0,0);
-            width: 80%;
+            position: relative;
+            top: 0;
+            width: 375px;
             height: 7rem;
             flex-direction: column;
             justify-content: space-between;
@@ -31,6 +69,12 @@
 
             transition: transform 0.6s 0.3s ease, opacity 0.6s 0.3s ease;
             opacity: 0;
+
+            @include below-desktop{
+                margin-left: auto;
+                transform: translate(100%, 0);
+                border-radius: 8px 0 0 8px;
+            }
             
             //child stylings separately
         }
@@ -41,9 +85,9 @@
         display: flex;
         position: absolute;
         bottom: 18%;
-        left: 10%;
         width: 100%;
         height: auto;
+        padding: 0 10%;
         color: $text-light;
         font-size: 0.9rem;
         font-family: 'Montserrat';
@@ -55,16 +99,17 @@
         transition: opacity 0.6s 0.7s ease;
         opacity: 0;
 
+        @include below-desktop{
+            position: relative;
+            padding: 40px 10%;
+        }
+
         h1{
             font-size: 1.5rem;
         }
 
-        span{
-            color: $text-accent-1;
-        }
-
         p{
-            width: 80%;
+            width: 100%;
         }
 
     }
@@ -72,7 +117,7 @@
     .scroll-icon{
         display: block;
         position: absolute;
-        bottom: 5%;
+        top: calc(100vh - 150px);
         left: 50%;
         transform: translate(-50%, 0);
         box-sizing: content-box;
@@ -147,12 +192,48 @@
             text-align: right;
         }
     }
+}
 
-    /*.coming-soon{
+//about us section
+
+.about{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 40px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10vmin 10%;
+    background-color: $blue-3;
+
+    //adding slants
+    &::before{
+        content: '';
         display: block;
-        margin: 15px 40px;
-        margin-left: auto;
-        font-size: 0.65rem;
-        font-style: italic;
-    }*/
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 4vw;
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+        background-color: $text-light;
+    }
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4vw;
+        clip-path: polygon(0 0, 0 4vw, 100% 100%);
+        background-color: $text-light;
+    }
+
+    h1{
+        font-size: 2rem;
+        font-family: Montserrat;
+        text-align: left;
+    }
 }

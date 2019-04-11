@@ -23,6 +23,7 @@ name: "app",
 data: function() {
     return {
         showNav: false,
+        scrollPos: 0,
         navbar: [
             {
                 name: "Alphanode",
@@ -47,6 +48,20 @@ created(){
     setTimeout(() => {
         document.querySelector('.navbar').style.transform = 'translate(-50%, 0)';
     }, 0);
+    window.addEventListener('scroll', this.navbarScrollHandler);
+},
+destroyed(){
+    window.removeEventListener('scroll', this.navbarScrollHandler);
+},
+methods: {
+    navbarScrollHandler: function(){
+        if (window.scrollY > this.scrollPos){
+            document.querySelector('.navbar').style.transform = 'translate(-50%, -72px)';
+        }else{
+            document.querySelector('.navbar').style.transform = 'translate(-50%, 0)';            
+        }
+        this.scrollPos = window.scrollY;
+    }
 }
 };
 </script>
