@@ -30,7 +30,7 @@
         @include below-desktop{
             display: block;
             position: absolute;
-            top: calc(0.5*#{$nav-height} - 0.5*#{$cross-height});
+            top: calc(0.5*#{$nav-height} - 0.65*#{$cross-height});
             left: 5%;
             width: $cross-height;
             height: $cross-height;
@@ -111,7 +111,7 @@
         @include below-desktop{
             display: flex;
             position: relative;
-            transform: translate(-100vw, 0);
+            transform: translate(-100%, 0);
             width: 100%;
             height: 100vh;
             margin: 0;

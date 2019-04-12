@@ -4,7 +4,7 @@
             <div class="graphic">
                 
             </div>
-            <div class="boxes">
+            <div class="boxes" data-easy-reveal>
                 <vue-particles></vue-particles>
                 <div class="box-front">
                     <div class="alphanode">
@@ -25,15 +25,37 @@
         </section>
     
         <section class="about">
-            <h1>What is node?</h1>
+            <h1>About <span class="green">node</span></h1>
             <p>Node, the technology club of Delhi Public School, Sector 45, Gurgaon, is reputed for its commitment to honing digital skills among young enthusiasts.<br><br>Today, node has 100+ members, from classes VI - XII, each excelling in specific fields like programming, machine learning, digital imaging, motion graphics, photography, video editing, app development, web development, quiz and robotics.<br><br>Alphanode is the annual tech symposium conducted by node, and is widely considered to be among the most prestigious events in the Delhi - NCR tech circuit.</p>
         </section>
+
+        <section class="growth">
+            <h1>We are growing</h1>
+            <div class="stats">
+                <div class="stat events"><span>{{ stats.events }}</span><p>No. of Events</p></div>
+                <div class="stat schools"><span>{{ stats.schools }}</span><p>No. of Schools</p></div>
+                <div class="stat participants"><span>{{ stats.participants }}</span><p>No. of participants</p></div>
+            </div>
+            <h2>[ Stats from alpha<span class="green">node</span> 2018 ]</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate atque recusandae, necessitatibus nesciunt veritatis sequi unde. Nostrum dolor numquam, aliquid expedita ex cupiditate commodi ipsa itaque aperiam aspernatur. Deserunt, nemo</p>
+        </section>
+
+        <!-- <router-link to="/members" @click.native="showNav = false" class="team-btn">Meet our team</router-link> -->
     </div>
 </template>
 
 <script>
 export default {
 name: 'home',
+data: function() {
+    return{
+        stats: { 
+            events: 10,
+            schools: 17,
+            participants: 400
+        }
+    }
+},
 mounted() {
     setTimeout(() => {
         this.onloadAnims();
@@ -42,21 +64,32 @@ mounted() {
     $(document).scroll(function(){
         $('.scroll-icon').css({opacity: 0});
     });
+
+    this.onscrollAnims();
+    window.addEventListener('scroll', this.onscrollAnims);
 },
 methods: {
     onloadAnims: function() {
-        $('.boxes').css({transform: 'translate(0,0)', opacity: 1});
         if(window.innerWidth >= 1025){
+            //desktop only animations
             $('.boxes > .box-front').css({transform: 'translate(-25%, 0)', opacity: 1});
+            $('.boxes').css({transform: 'translate(0,0)', opacity: 1});
+            $('.text').css({opacity: 1});
         }else{
-            $('.boxes > .box-front').css({transform: 'translate(0, 0)', opacity: 1});
+            //mobile view animations
         }
-        $('.text').css({opacity: 1});
+        //common animations
         $('.scroll-icon').css({opacity: 0.4});
+    },
+    onscrollAnims: function(){
+        if($(window).scrollTop() >= $('section.growth').offset().top - window.innerHeight*0.75){
+            $('section.growth').css({opacity: 1, transform: 'translate(0,0)'});
+        }
     }
 }
 }
 </script>
+
 
 <style lang="scss" scoped>
 @import '../sass/home';
