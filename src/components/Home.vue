@@ -25,13 +25,13 @@
         </section>
     
         <section class="about">
-            <h1>About node</h1>
+            <h1>About <span class="green">node</span></h1>
             <p>Node, the technology club of Delhi Public School, Sector 45, Gurgaon, is reputed for its commitment to honing digital skills among young enthusiasts. At node, we believe that our future is what governs our today; and our passion is what drives us to our tomorrow.<br><br>Today, node has 100+ computer enthusiasts, from classes VI - XII, each excelling in specific fields like programming, machine learning, digital imaging, motion graphics, photography, video editing, app development, web development, quiz and robotics.<br><br>Alphanode, the annual tech symposium conducted by node in the month of July, is widely considered to be among the most prestigious events in the Delhi - NCR tech circuit.</p>
         </section>
 
         <section class="growth">
-            <h1>Alpha<span class="green">node</span> in the Past</h1>
-            <p>Alpha<span class="green">node</span> started in 2015 with 6 events and ~100 participants, and has been consistent in its growth since then. Alphanode 2019 is expects to attract 600+ students from 25+ schools competing in 14 creative events. With student written bots competing against each other in a game of modified checkers, autonomous robots and online cryptic hunts, alphanode 2019 will be one of the most unique tech symposiums in Delhi-NCR.</p>
+            <h1>Growth of alpha<span class="green">node</span></h1>
+            <p>Alpha<span class="green">node</span> started in 2015 with 6 events and ~100 participants, and has been consistent in its growth since then. Alpha<span class="green">node</span> 2019 is expects to attract 600+ students from 25+ schools competing in 14 creative events. With student written bots competing against each other in a game of modified checkers, autonomous robots and online cryptic hunts, alpha<span class="green">node</span> 2019 will be one of the most unique tech symposiums in Delhi-NCR.</p>
             <div class="stats">
                 <div class="stat events"><span>{{ stats.events }}</span><p>No. of Events</p></div>
                 <div class="stat schools"><span>{{ stats.schools }}</span><p>No. of Schools</p></div>
