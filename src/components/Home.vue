@@ -25,19 +25,19 @@
         </section>
     
         <section class="about">
-            <h1>About <span class="green">node</span></h1>
-            <p>Node, the technology club of Delhi Public School, Sector 45, Gurgaon, is reputed for its commitment to honing digital skills among young enthusiasts.<br><br>Today, node has 100+ members, from classes VI - XII, each excelling in specific fields like programming, machine learning, digital imaging, motion graphics, photography, video editing, app development, web development, quiz and robotics.<br><br>Alphanode is the annual tech symposium conducted by node, and is widely considered to be among the most prestigious events in the Delhi - NCR tech circuit.</p>
+            <h1>About node</h1>
+            <p>Node, the technology club of Delhi Public School, Sector 45, Gurgaon, is reputed for its commitment to honing digital skills among young enthusiasts. At node, we believe that our future is what governs our today; and our passion is what drives us to our tomorrow.<br><br>Today, node has 100+ computer enthusiasts, from classes VI - XII, each excelling in specific fields like programming, machine learning, digital imaging, motion graphics, photography, video editing, app development, web development, quiz and robotics.<br><br>Alphanode, the annual tech symposium conducted by node in the month of July, is widely considered to be among the most prestigious events in the Delhi - NCR tech circuit.</p>
         </section>
 
         <section class="growth">
-            <h1>We are growing</h1>
+            <h1>Alpha<span class="green">node</span> in the Past</h1>
+            <p>Alpha<span class="green">node</span> started in 2015 with 6 events and ~100 participants, and has been consistent in its growth since then. Alphanode 2019 is expects to attract 600+ students from 25+ schools competing in 14 creative events. With student written bots competing against each other in a game of modified checkers, autonomous robots and online cryptic hunts, alphanode 2019 will be one of the most unique tech symposiums in Delhi-NCR.</p>
             <div class="stats">
                 <div class="stat events"><span>{{ stats.events }}</span><p>No. of Events</p></div>
                 <div class="stat schools"><span>{{ stats.schools }}</span><p>No. of Schools</p></div>
                 <div class="stat participants"><span>{{ stats.participants }}</span><p>No. of participants</p></div>
             </div>
             <h2>[ Stats from alpha<span class="green">node</span> 2018 ]</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate atque recusandae, necessitatibus nesciunt veritatis sequi unde. Nostrum dolor numquam, aliquid expedita ex cupiditate commodi ipsa itaque aperiam aspernatur. Deserunt, nemo</p>
         </section>
 
         <!-- <router-link to="/members" @click.native="showNav = false" class="team-btn">Meet our team</router-link> -->
