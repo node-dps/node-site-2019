@@ -5,8 +5,7 @@ import Alumni from './components/Alumni.vue'
 import Achievements from './components/Achievements.vue'
 import ErrorPage from './components/ErrorPage.vue'
 
-export default[
-    {
+export default [{
         path: '*',
         component: ErrorPage
     },

@@ -10,62 +10,59 @@
                 <router-link to="/" @click.native="showNav = false"><img src="./assets/icons/nodelogo.png" class="logo"></router-link>
             </div>
             <div class="links" v-bind:class="{'show': showNav}">
-				<router-link v-for="item in navbar" :key="item.$index" :to="item.href" @click.native="showNav = false" class="nav-item">{{ item.name }}</router-link>
+                <router-link v-for="item in navbar" :key="item.$index" :to="item.href" @click.native="showNav = false" class="nav-item">{{ item.name }}</router-link>
             </div>
         </nav>
         <router-view></router-view>
     </div>
 </template>
-
 <script>
 export default {
-name: "app",
-data: function() {
-    return {
-        showNav: false,
-        scrollPos: 0,
-        navbar: [
-            {
-                name: "Alphanode",
-                href: "alphanode"
-            },
-            {
-                name: "Members",
-                href: "members"
-            },
-            {
-                name: "Alumni",
-                href: "alumni"
-            },
-            {
-                name: "Achievements",
-                href: "achievements"
+    name: "app",
+    data: function() {
+        return {
+            showNav: false,
+            scrollPos: 0,
+            navbar: [{
+                    name: "Alphanode",
+                    href: "alphanode"
+                },
+                {
+                    name: "Members",
+                    href: "members"
+                },
+                {
+                    name: "Alumni",
+                    href: "alumni"
+                },
+                {
+                    name: "Achievements",
+                    href: "achievements"
+                }
+            ]
+        };
+    },
+    created() {
+        setTimeout(() => {
+            document.querySelector('.navbar').style.transform = 'translate(-50%, 0)';
+        }, 0);
+        window.addEventListener('scroll', this.navbarScrollHandler);
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.navbarScrollHandler);
+    },
+    methods: {
+        navbarScrollHandler: function() {
+            if (window.scrollY > this.scrollPos) {
+                document.querySelector('.navbar').style.transform = 'translate(-50%, -72px)';
+            } else {
+                document.querySelector('.navbar').style.transform = 'translate(-50%, 0)';
             }
-        ]
-    };
-},
-created(){
-    setTimeout(() => {
-        document.querySelector('.navbar').style.transform = 'translate(-50%, 0)';
-    }, 0);
-    window.addEventListener('scroll', this.navbarScrollHandler);
-},
-destroyed(){
-    window.removeEventListener('scroll', this.navbarScrollHandler);
-},
-methods: {
-    navbarScrollHandler: function(){
-        if (window.scrollY > this.scrollPos){
-            document.querySelector('.navbar').style.transform = 'translate(-50%, -72px)';
-        }else{
-            document.querySelector('.navbar').style.transform = 'translate(-50%, 0)';            
+            this.scrollPos = window.scrollY;
         }
-        this.scrollPos = window.scrollY;
     }
-}
 };
 </script>
-
 <style lang="scss">
 @import './sass/navbar';
 </style>
