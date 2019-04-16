@@ -20,9 +20,35 @@
         position: relative;
         width: 56.25vw;
         height: calc(100vh - 1*#{$nav-height});
+        margin: auto auto;
 
         @include below-desktop{
             width: 100%;
+        }
+
+        img {
+            display: block;
+            width: 70%;
+            max-width: 700px;
+            margin: 0 auto;
+
+            @include below-desktop{
+                width: 480px;
+            }
+
+            @include below-tablet{
+                margin-top: 30px;
+                width: 370px;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.7em;
+
+            @include below-tablet{
+                font-size: 1.5em;
+            }
         }
     }
 
