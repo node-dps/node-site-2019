@@ -15,7 +15,6 @@
                     <h1><span class="green">Innovation Awaits</span></h1>
                     <p>Alphanode 2019 will harbor a multitude of innovative events, ranging from autonomous robotics to challenge programming,
                         and fierce competition with over 500 participants from across Delhi-NCR.</p>
-                    <a href="/alphanode">Click to learn more</a>
                 </div>
             </div>
             <div class="scroll-icon">

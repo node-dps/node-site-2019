@@ -52,6 +52,7 @@
                             <div class="links">
                                 <!-- <p class="heading">Links</p> -->
                                 <a href="https://github.com/StrixRox" class="link" target="_blank"><img src="../assets/icons/github.png"></a>
+                                <a href="https://www.instagram.com/strix_rox/" class="link" target="_blank"><img src="../assets/icons/instagram.png"></a>
                             </div>
                         </div>
                     </div>
@@ -77,6 +78,7 @@
                                 <!-- <p class="heading">Links</p> -->
                                 <a href="https://jainilajmera.github.io" class="link" target="_blank"><img src="../assets/icons/website.png"></a>
                                 <a href="https://bit.ly/jainilyoutube" class="link" target="_blank"><img src="../assets/icons/youtube.png"></a>
+                                <a href="https://www.instagram.com/jainilajmera/" class="link" target="_blank"><img src="../assets/icons/instagram.png"></a>
                             </div>
                         </div>
                     </div>
@@ -123,8 +125,8 @@
                         <h2 class="desig">Gaming Head</h2>
                         <div class="links-container">
                             <div class="links">
-                                <p class="info">LINKS UNAVAILABLE</p>
-                                
+                                <a href="http://linkedin.com/in/arnav-gupta-750991184" class="link" target="_blank"><img src="../assets/icons/linkedin.png"></a>
+                                <a href="https://vsco.co/chikkni" class="link" target="_blank"><img src="../assets/icons/vsco.png"></a>
                             </div>
                         </div>
                     </div>
@@ -147,6 +149,7 @@
                             <div class="links">
                                 <!-- <p class="heading">Links</p> -->
                                 <a href="https://www.youtube.com/channel/UCbs9A1dU5IAz9p6mddV1H3A" class="link"><img src="../assets/icons/youtube.png"></a>
+                                <a href="https://soundcloud.com/jshelly1738" class="link"><img src="../assets/icons/soundcloud.png"></a>
                             </div>
                         </div>
                     </div>
