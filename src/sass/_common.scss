@@ -23,6 +23,10 @@ a{
 p{
     letter-spacing: 0.5px;
     text-align: justify;
+
+    /*@include below-desktop{
+        text-align: left;
+    }*/
 }
 
 div#page_container{

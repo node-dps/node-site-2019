@@ -99,7 +99,7 @@
         width: 100%;
         padding: 10%;
         color: $text-light;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         font-family: 'Montserrat';
         flex-direction: column;
         justify-content: flex-start;
@@ -116,7 +116,7 @@
         }
 
         h1{
-            font-size: 1.7rem;
+            font-size: 1.5rem;
         }
 
         p{
@@ -196,8 +196,8 @@
             margin-left: 3px;
             color: $text-accent-3;
         }
-        
-        h3{
+
+        h3 {
             padding-right: 0.25em;
             font-size: 1.3em;
             text-align: right;
