@@ -283,7 +283,7 @@
         opacity: 0.7;
     }
 
-    .stats{
+    /*.stats{
         display: flex;
         position: relative;
         width: 100%;
@@ -318,15 +318,37 @@
                 align-items: center;
             }
         }
-    }
+    }*/
 
     & > p{
         width: 75%;
         padding: 30px 0;
-        line-height: 1.8;
-        
+
         @include below-desktop{
             width: 100%;
+        }
+    }
+
+    .graph-1 {
+        padding-bottom: 50px;
+        min-width: 600px;
+        width: 70%;
+        height: auto;
+
+        @include below-tablet{
+            display: none;
+        }
+    }
+
+    .graph-2 {
+        display: none;
+
+        @include below-tablet{
+            display: block;
+            padding-bottom: 50px;
+            width: 80%;
+            max-width: 300px;
+            height: auto;
         }
     }
     
