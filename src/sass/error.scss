@@ -1,0 +1,66 @@
+@import './_common';
+
+#view_container {
+    background-color: $blue-1; 
+}
+.error {
+    min-height: calc(100vh - 1.0*#{$nav-height});
+    background-color: $blue-1; 
+    color: white;
+    margin: 50px;
+    text-align: center;
+
+    img {
+        height: 130px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 5em;
+        letter-spacing: 5px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        margin-top: 0;
+    }
+    
+    h4 {
+        padding-bottom: 15px;
+    }
+
+    a {
+        color: $text-accent-3;
+        border: 1px solid $text-accent-3;
+        border-radius: 4px;
+        margin: 0 10px;
+        padding: 7px;
+    }
+
+    a:hover {
+        transition: 0.1s;
+        color: white;
+        background-color: $blue-2;
+        border-color: $blue-2;
+    }
+
+    @include below-tablet {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        h1 {
+            font-size: 4em;
+        }
+
+        h2 {
+            font-size: 1.1em;
+        }
+
+        h4 {
+            font-size: 0.9em;
+        }
+
+    }
+}

@@ -1,0 +1,19 @@
+@import './_common';
+
+.error {
+    height: 100vh;
+    background-color: $blue-1;
+    color: white;
+    margin: 50px;
+    text-align: center;
+
+    h1 {
+        font-size: 2.3em;
+        margin-bottom: 0;
+    }
+
+    .link {
+        padding-bottom: 5px;
+        border-bottom: 1px solid $blue-2;
+    }
+}
