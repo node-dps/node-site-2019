@@ -140,8 +140,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="member">
                         <div class="dp" style="background-image: url('../assets/members/arnav-gupta.jpeg');"><img src="../assets/members/arnav-gupta.jpeg"></div>
                         <h1 class="name">Arnav Gupta</h1>
@@ -166,8 +164,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="member">
                         <div class="dp" style="background-image: url('../assets/members/garvdeep-singh.jpeg');"><img src="../assets/members/garvdeep-singh.jpeg"></div>
                         <h1 class="name">Garvdeep Singh</h1>
