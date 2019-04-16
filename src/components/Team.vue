@@ -15,7 +15,7 @@
                         <div class="container">
                             <div class="links">
                                 <a href="https://github.com/IshanManchanda" class="link" target="_blank"><img src="../assets/icons/github.png"></a>
-                                <a href="https://www.linkedin.com/in/ishan-manchanda-543802182/" class="link" target="_blank"><img src="../assets/icons/linkedin.png"></a>
+                                <a href="https://www.linkedin.com/in/ishan-manchanda/" class="link" target="_blank"><img src="../assets/icons/linkedin.png"></a>
                             </div>
                         </div>
                     </div>
