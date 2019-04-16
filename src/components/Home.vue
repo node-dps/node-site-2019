@@ -2,6 +2,8 @@
     <div id="view_container">
         <section class="landing first">
             <div class="graphic">
+                <img src="../assets/bg/circuit-board-isometric-c.jpeg">
+                <h1> Network of Digital Enthusiasts </h1>
             </div>
             <div class="boxes">
                 <vue-particles></vue-particles>
