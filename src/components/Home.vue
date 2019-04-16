@@ -3,7 +3,7 @@
         <section class="landing first">
             <div class="graphic">
             </div>
-            <div class="boxes" data-easy-reveal>
+            <div class="boxes">
                 <vue-particles></vue-particles>
                 <div class="box-front">
                     <div class="alphanode">
