@@ -10,7 +10,7 @@
                     <div class="member alumni">
                         <div class="dp"><img src="../assets/members/nishant-tripathi.png"></div>
                         <h1 class="name">Nishant Tripathi</h1>
-                        <p class="info"><br><br>&nbsp;</p>
+                        <p class="info">UI/UX designer for Protein O' Clock and doggo - an app to counter problems faced by dogs.</p>
                         <div class="container">
                             <div class="links">
                                 <a href="https://www.behance.net/nishantrippy" class="link" target="_blank"><img src="../assets/icons/behance.png"></a>
@@ -33,7 +33,7 @@
                     <div class="member alumni">
                         <div class="dp"><img src="../assets/members/shubhankar-singh.png"></div>
                         <h1 class="name">Shubhankar Singh</h1>
-                        <p class="info"><br><br>&nbsp;</p>
+                        <p class="info">Loves electronic music and produces songs under the artist name 'ECES.'</p>
                         <div class="container">
                             <div class="links">
                                 <a href="https://soundcloud.com/ecesofficial" class="link" target="_blank"><img src="../assets/icons/soundcloud.png"></a>
@@ -43,7 +43,7 @@
                     <div class="member alumni">
                         <div class="dp"><img src="../assets/members/akarsh-khanna.png"></div>
                         <h1 class="name">Akarsh Khanna</h1>
-                        <p class="info"><br><br>&nbsp;</p>
+                        <p class="info">Head Boy, Student Council 2018. Subject Matter Expert at Node.</p>
                         <div class="container">
                             <div class="links">
                                 <p> Links Unavailable </p>
@@ -53,7 +53,7 @@
                     <div class="member alumni">
                         <div class="dp"><img src="../assets/members/raunaq-puri.jpg"></div>
                         <h1 class="name">Raunaq Puri</h1>
-                        <p class="info"><br><br>&nbsp;</p>
+                        <p class="info">Lead Organiser of TEDxYouth@DPSGurgaon 2018.</p>
                         <div class="container">
                             <div class="links">
                                 <a href="https://www.linkedin.com/in/raunaq-puri-6b4826150/" class="link" target="_blank"><img src="../assets/icons/linkedin.png"></a>
@@ -63,7 +63,7 @@
                     <div class="member alumni">
                         <div class="dp"><img src="../assets/members/samarth-issar.png"></div>
                         <h1 class="name">Samarth Issar</h1>
-                        <p class="info"><br><br>&nbsp;</p>
+                        <p class="info">Loves gaming and theatre.<br>&nbsp;</p>
                         <div class="container">
                             <div class="links">
                                 <a href="https://twitter.com/samarthissar" class="link" target="_blank"><img src="../assets/icons/twitter.png"></a>
@@ -73,7 +73,7 @@
                     <div class="member alumni">
                         <div class="dp"><img src="../assets/members/viraat-chandra.jpeg"></div>
                         <h1 class="name">Viraat Chandra</h1>
-                        <p class="info"><br><br>&nbsp;</p>
+                        <p class="info">An avid coder and founder of the Motion app.<br>&nbsp;</p>
                         <div class="container">
                             <div class="links">
                                 <a href="https://github.com/ViRu-ThE-ViRuS" class="link" target="_blank"><img src="../assets/icons/github.png"></a>
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                     <div class="member alumni">
-                        <div class="dp"><img src="../assets/members/blank.png"></div>
+                        <div class="dp"><img src="../assets/members/yutika-arora.jpg"></div>
                         <h1 class="name">Yutika Arora</h1>
                         <p class="info">Pursuing B.Des. at National Institute of Fashion Technology, Hyderabad.</p>
                         <div class="container">
