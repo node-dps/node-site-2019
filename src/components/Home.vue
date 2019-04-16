@@ -27,7 +27,7 @@
         <section class="growth">
             <h1>Growth of Alpha<span class="green">node</span></h1>
             <p>Alpha<span class="green">node</span> started in 2015 with 6 events and ~100 participants, and has been consistent in its growth since then. Alpha<span class="green">node</span> 2019 is expects to attract 600+ students from 25+ schools competing in 14 creative events. With student written bots competing against each other in a game of modified checkers, autonomous robots and online cryptic hunts, Alpha<span class="green">node</span> 2019 will be one of the most unique tech symposiums in Delhi-NCR.</p>
-            <div class="stats">
+            <!--<div class="stats">
                 <div class="stat events"><span>{{ stats.events }}</span>
                     <p>No. of Events</p>
                 </div>
@@ -38,7 +38,8 @@
                     <p>No. of participants</p>
                 </div>
             </div>
-            <h2>[ Stats from Alpha<span class="green">node</span> 2018 ]</h2>
+            <h2>[ Stats from Alpha<span class="green">node</span> 2018 ]</h2>-->
+            
         </section>
         <!-- <router-link to="/members" @click.native="showNav = false" class="team-btn">Meet our team</router-link> -->
     </div>
