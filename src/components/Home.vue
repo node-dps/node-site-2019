@@ -50,21 +50,11 @@
             <img src="../assets/graphs/2.2.png" class="graph-2">
             <img src="../assets/graphs/2.3.png" class="graph-2">
         </section>
-        <!-- <router-link to="/members" @click.native="showNav = false" class="team-btn">Meet our team</router-link> -->
     </div>
 </template>
 <script>
 export default {
     name: 'home',
-    data: function() {
-        return {
-            stats: {
-                events: 10,
-                schools: 17,
-                participants: 400
-            }
-        }
-    },
     mounted() {
         setTimeout(() => {
             this.onloadAnims();
@@ -76,7 +66,10 @@ export default {
 
         this.onscrollAnims();
         window.addEventListener('scroll', this.onscrollAnims);
-    },
+	},
+	destroyed(){
+		window.removeEventListener('scroll', this.onscrollAnims);
+	},
     methods: {
         onloadAnims: function() {
             if (window.innerWidth >= 1025) {
@@ -91,9 +84,12 @@ export default {
             $('.scroll-icon').css({ opacity: 0.4 });
         },
         onscrollAnims: function() {
-            if ($(window).scrollTop() >= $('section.growth').offset().top - window.innerHeight * 0.75) {
-                $('section.growth').css({ opacity: 1, transform: 'translate(0,0)' });
-            }
+			$('section.growth').each(function() {
+				if ($(window).scrollTop() >= $(this).offset().top - window.innerHeight * 0.75) {
+					$(this).css({ opacity: 1, transform: 'translate(0,0)' });
+				}
+			});
+            
         }
     }
 }

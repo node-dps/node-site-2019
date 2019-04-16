@@ -116,7 +116,6 @@
         @include below-desktop{
             display: flex;
             position: relative;
-            transform: translate(-100%, 0);
             width: 100%;
             height: 0;
             margin: 0;
@@ -125,12 +124,11 @@
             justify-content: flex-start;
             align-items: center;
             background-color: $text-light;
-            transition: all 0.2s, height 0s;
+            transition: all 0.2s;
 
             &.show{
                 height: 100vh;
                 padding: 20px 0;
-                transform: translate(0,0);
             }
         }
 

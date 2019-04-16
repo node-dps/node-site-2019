@@ -55,7 +55,7 @@
         text-align: center;
 		text-transform: capitalize;
 	}
-	.links-container{
+	.container{
 		display: block;
 		position: absolute;
 		top: 0;
@@ -67,6 +67,28 @@
 		
 		&:hover > .links{
 			transform: translate(0,0);
+		}
+		&:hover > .info{
+			visibility: visible;
+			opacity: 1;
+		}
+
+		.info{
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: calc(75% + 10px);
+			background-color: $blue-4;
+			visibility: hidden;
+			overflow: hidden;
+			opacity: 0;
+
+			p{
+				display: block;
+				padding: 20px 30px;
+				text-align: center;
+			}
 		}
 
 		.links{
@@ -97,7 +119,7 @@
 				}
 			}
 
-			.info{
+			.oops{
 				font-size: 0.8em;
 				font-style: italic;
 			}

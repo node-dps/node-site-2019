@@ -1,10 +1,9 @@
-@import '_common';
-@import './profile_cards';
+@import './_common';
+@import './_profile_cards';
 
 .landing.first{
     height: 80vh;
     background-color: $blue-1;
-    // box-shadow: 0 5px 10px rgba(0,0,0,0.1) inset;
 
     @include below-desktop{
         height: 70vh;

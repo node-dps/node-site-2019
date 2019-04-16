@@ -2,132 +2,26 @@
     <div id="view_container">
         <section class="landing first">
             <h1 class="title">Alumni</h1>
+            <vue-particles></vue-particles>
         </section>
         <section class="members">
             <div class="ppl">
                 <div class="row">
                     <div class="member">
-                        <div class="dp"><img src="../assets/members/pratyush-kumar.jpeg"></div>
-                        <h1 class="name">Pratyush Kumar</h1>
-                        <h2 class="desig">Web Development Head</h2>
-                        <div class="links-container">
-                            <div class="links">
-                                <!-- <p class="heading">Links</p> -->
-                                <a href="" class="link"><img src="../assets/icons/face.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
+                        <div class="dp"><img src="../assets/members/rahul-batra.png"></div>
+                        <h1 class="name">Rahul Batra</h1>
+                        <h2 class="desig">Digital Imaging Head</h2>
+                        <div class="container">
+                            <div class="info">
+                                <p>Freelance web designer / visual artist. Currently intending to major in economics/statistics.
+                                    Freelance web designer / visual artist. Currently intending to major in economics/statisticsFreelance web designer / visual artist. Currently intending to major in economics/statisticsFreelance web designer / visual artist. Currently intending to major in economics/statisticsFreelance web designer / visual artist. Currently intending to major in economics/statisticsFreelance web designer / visual artist. Currently intending to major in economics/statistics
+                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="member">
-                        <div class="dp"><img src="../assets/members/pratyush-kumar.jpeg"></div>
-                        <h1 class="name">Pratyush Kumar</h1>
-                        <h2 class="desig">Web Development Head</h2>
-                        <div class="links-container">
                             <div class="links">
                                 <!-- <p class="heading">Links</p> -->
-                                <a href="" class="link"><img src="../assets/icons/face.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member">
-                        <div class="dp"><img src="../assets/members/pratyush-kumar.jpeg"></div>
-                        <h1 class="name">Pratyush Kumar</h1>
-                        <h2 class="desig">Web Development Head</h2>
-                        <div class="links-container">
-                            <div class="links">
-                                <!-- <p class="heading">Links</p> -->
-                                <a href="" class="link"><img src="../assets/icons/face.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member">
-                        <div class="dp"><img src="../assets/members/pratyush-kumar.jpeg"></div>
-                        <h1 class="name">Pratyush Kumar</h1>
-                        <h2 class="desig">Web Development Head</h2>
-                        <div class="links-container">
-                            <div class="links">
-                                <!-- <p class="heading">Links</p> -->
-                                <a href="" class="link"><img src="../assets/icons/face.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="member">
-                        <div class="dp"><img src="../assets/members/pratyush-kumar.jpeg"></div>
-                        <h1 class="name">Pratyush Kumar</h1>
-                        <h2 class="desig">Web Development Head</h2>
-                        <div class="links-container">
-                            <div class="links">
-                                <!-- <p class="heading">Links</p> -->
-                                <a href="" class="link"><img src="../assets/icons/face.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="member">
-                        <div class="dp"><img src="../assets/members/pratyush-kumar.jpeg"></div>
-                        <h1 class="name">Pratyush Kumar</h1>
-                        <h2 class="desig">Web Development Head</h2>
-                        <div class="links-container">
-                            <div class="links">
-                                <!-- <p class="heading">Links</p> -->
-                                <a href="" class="link"><img src="../assets/icons/face.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="member">
-                        <div class="dp"><img src="../assets/members/pratyush-kumar.jpeg"></div>
-                        <h1 class="name">Pratyush Kumar</h1>
-                        <h2 class="desig">Web Development Head</h2>
-                        <div class="links-container">
-                            <div class="links">
-                                <!-- <p class="heading">Links</p> -->
-                                <a href="" class="link"><img src="../assets/icons/face.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href="" class="link"><img src="../assets/icons/med.png"></a>
-                                <a href=    "" class="link"><img src="../assets/icons/med.png"></a>
+                                <a href="https://rahulbatra.in" class="link" target="_blank"><img src="../assets/icons/website.png"></a>
+                                <a href="https://github.com/RahulBatra065" class="link" target="_blank"><img src="../assets/icons/github.png"></a>
+                                <a href="https://www.behance.net/rahulbatra1" class="link" target="_blank"><img src="../assets/icons/behance.png"></a>
                             </div>
                         </div>
                     </div>
@@ -141,9 +35,15 @@ export default {
     name: 'alumni',
     mounted(){
         window.addEventListener('scroll', this.onscrollAnims);
+        document.querySelectorAll('.info, .links').forEach(function(){
+            console.log('ad');
+        });
     },
     destroyed() {
         window.removeEventListener('scroll', this.onscrollAnims);
+        document.querySelectorAll('.info, .links').forEach(function(){
+            this.removeEventListener('scroll', this.overflowScroll);
+        });
     },
     methods: {
         onscrollAnims: function(){
@@ -165,6 +65,9 @@ export default {
                     backgroundColor: newColor
                 });
             }
+        },
+        overflowScroll: function(){
+            console.log('asd');
         }
     }
 }
