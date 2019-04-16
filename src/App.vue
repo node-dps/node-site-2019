@@ -28,8 +28,8 @@ export default {
                     href: "alphanode"
                 },
                 {
-                    name: "Members",
-                    href: "members"
+                    name: "Team",
+                    href: "team"
                 },
                 {
                     name: "Alumni",

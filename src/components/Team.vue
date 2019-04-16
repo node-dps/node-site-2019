@@ -1,7 +1,7 @@
 <template>
     <div id="view_container">
         <section class="landing first">
-            <h1 class="title">Our Team</h1>
+            <h1 class="title">Team</h1>
             <vue-particles></vue-particles>
         </section>
         <section class="members">
@@ -228,5 +228,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../sass/members';
+@import '../sass/team';
 </style>
