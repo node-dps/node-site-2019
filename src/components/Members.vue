@@ -2,6 +2,7 @@
     <div id="view_container">
         <section class="landing first">
             <h1 class="title">Core Team</h1>
+            <vue-particles></vue-particles>
         </section>
         <section class="members">
             <div class="ppl">
