@@ -3,9 +3,9 @@ import App from './App.vue'
 
 import VueRouter from 'vue-router'
 import Routes from './routes'
-import jQuery from 'jquery'
 import VueParticles from 'vue-particles'
-global.$ = jQuery;
+import jQuery from 'jquery'
+global.$ = jQuery
 
 Vue.use(VueParticles)
 Vue.use(VueRouter)

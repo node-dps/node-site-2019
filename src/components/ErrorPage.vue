@@ -1,7 +1,9 @@
 <template>
-    <section class="first">
-        <h3>ERROR!!!!</h3>
-    </section>
+    <div id="view_container">
+        <section class="first">
+            <h3>ERROR!!!!</h3>
+        </section>
+    </div>
 </template>
 <script>
 export default {

@@ -43,6 +43,7 @@ export default {
         };
     },
     created() {
+        //no jQuery available at this point
         setTimeout(() => {
             document.querySelector('.navbar').style.transform = 'translate(-50%, 0)';
         }, 0);
@@ -53,10 +54,12 @@ export default {
     },
     methods: {
         navbarScrollHandler: function() {
-            if (window.scrollY > this.scrollPos) {
-                document.querySelector('.navbar').style.transform = 'translate(-50%, -72px)';
-            } else {
-                document.querySelector('.navbar').style.transform = 'translate(-50%, 0)';
+            if(!this.showNav && window.scrollY > 54){
+                if (window.scrollY > this.scrollPos) {
+                    document.querySelector('.navbar').style.transform = 'translate(-50%, -72px)';
+                } else {
+                    document.querySelector('.navbar').style.transform = 'translate(-50%, 0)';
+                }
             }
             this.scrollPos = window.scrollY;
         }

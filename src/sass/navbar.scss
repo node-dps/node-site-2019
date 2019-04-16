@@ -30,7 +30,7 @@
         @include below-desktop{
             display: block;
             position: absolute;
-            top: calc(0.5*#{$nav-height} - 0.65*#{$cross-height});
+            top: calc(0.5*#{$nav-height} - 0.5*#{$cross-height});
             left: 5%;
             width: $cross-height;
             height: $cross-height;
@@ -91,6 +91,7 @@
         @include below-desktop{
             width: 100%;
             margin: 0;
+            padding: 4px 0 0 0;
             justify-content: center;
             background-color: $text-light;
         }
@@ -101,6 +102,9 @@
         .logo{
             height: 100%;
             width: auto;
+            @include below-desktop{
+                padding: 0 0 0 6.25%;
+            }
         }
     }
 
