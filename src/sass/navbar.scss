@@ -15,11 +15,12 @@
     transition: transform 0.5s ease;
 
     @include below-desktop{
-        height: 100vh;
+        height: auto;
         flex-direction: column;
         overflow-x: hidden;
         overflow-y: auto;
         background-color: transparent;
+        overflow: hidden;
     }
     
     //the close icon
@@ -117,16 +118,18 @@
             position: relative;
             transform: translate(-100%, 0);
             width: 100%;
-            height: 100vh;
+            height: 0;
             margin: 0;
-            padding: 20px 0;
+            padding: 0;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
             background-color: $text-light;
-            transition: all 0.2s;
+            transition: all 0.2s, height 0s;
 
             &.show{
+                height: 100vh;
+                padding: 20px 0;
                 transform: translate(0,0);
             }
         }

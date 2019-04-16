@@ -63,6 +63,11 @@
 		height: 100%;
 		border-radius: 10px;
 		overflow: hidden;
+		z-index: 1;
+		
+		&:hover > .links{
+			transform: translate(0,0);
+		}
 
 		.links{
 			display: flex;
@@ -80,33 +85,21 @@
 			background-color: $blue-4;
 			overflow: hidden;
 			
-			&:hover{
-				transform: translate(0,0);
-				/*& > .heading{
-					opacity: 0;
-				}*/
-			}
-
-			/*.heading{
-				display: block;
-				position: absolute;
-				top: 0;
-				width: 100%;
-				margin: 0;
-				text-align: center;
-				text-transform: uppercase;
-			}*/
-			
 			.link{
 				display: block;
 				width: 30px;
 				height: 30px;
-				margin: 5px;
+				margin: 5px 10px;
 
 				img{
 					width: 100%;
 					height: 100%;
 				}
+			}
+
+			.info{
+				font-size: 0.8em;
+				font-style: italic;
 			}
 		}
 	}
