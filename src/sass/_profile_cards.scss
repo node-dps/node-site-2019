@@ -27,7 +27,8 @@
             display: block;
             width: 100%;
             height: 100%;
-            border-radius: 100%;
+			border-radius: 100%;
+			object-fit: cover;
         }
     }
 
@@ -36,18 +37,19 @@
         width: 100%;
 		margin: 30px 0 10px 0;
 		padding: 10px 0;
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-weight: normal;
 		text-align: center;
 		text-transform: capitalize;
-		background-color: $blue-4;
+		background-color: $text-accent-1;
+		color: white;
     }
 
     .desig{
         display: block;
         width: 100%;
         margin: 5px 0;
-        font-size: 1.15em;
+        font-size: 1em;
         font-weight: normal;
         text-align: center;
 		text-transform: capitalize;
@@ -61,32 +63,30 @@
 		border-radius: 10px;
 		overflow: hidden;
 
-		&:hover > .links{
-			transform: translate(0,0);
-			box-shadow: 0 -2px 3px rgba(0,0,0,0.1);
-
-			& > .links > .heading{
-				opacity: 0;
-			}
-		}
-
 		.links{
 			display: flex;
 			position: absolute;
 			bottom: 0;
 			transform: translate(0, calc(100% - 10px));
 			width: 100%;
-			height: calc(50% - 30px);
-			padding: 20px 8%;
+			height: calc(25% - 10px);
+			padding: 0px 8%;
 			box-sizing: border-box;
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
-			background-color: $text-accent-1;
+			background-color: $blue-4;
 			overflow: hidden;
+			
+			&:hover{
+				transform: translate(0,0);
+				/*& > .heading{
+					opacity: 0;
+				}*/
+			}
 
-			.heading{
+			/*.heading{
 				display: block;
 				position: absolute;
 				top: 0;
@@ -94,12 +94,12 @@
 				margin: 0;
 				text-align: center;
 				text-transform: uppercase;
-			}
+			}*/
 			
 			.link{
 				display: block;
-				width: 50px;
-				height: 50px;
+				width: 30px;
+				height: 30px;
 				margin: 5px;
 
 				img{
