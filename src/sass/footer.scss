@@ -2,15 +2,24 @@ $footer-icon-size: 50px;
 
 footer.dark{
     color: $text-light;
-    background-color: $blue-1;
+    background-color: $blue-5;
 }
 footer.light{
-    background-color: $blue-3;
+    background-color: $text-light;
+
+    .links .link .name{
+        color: $text-light;
+        background-color: $text-dark;
+
+        &::after{
+            border-top-color: $text-dark;
+        }
+    }
 }
 footer{
     display: flex;
     width: 100%;
-    min-height: 400px;
+    min-height: 300px;
     font-family: montserrat;
     font-size: 1em;
     flex-direction: column;
@@ -24,42 +33,59 @@ footer{
     .links{
         display: flex;
         width: 100%;
-        height: auto;
+        height: $footer-icon-size;
         justify-content: center;
         align-items: center;
         margin: 25px 0;
 
         .link{
             display: flex;
-            width: auto;
+            position: relative;
+            width: $footer-icon-size;
             height: $footer-icon-size;
             margin: 0 10px;
             justify-content: flex-start;
             align-items: center;
-            color: $text-dark;
-            background-color: $text-light;
-            border-radius: $footer-icon-size;
-            overflow: hidden;
-            
+
             .name{
                 display: block;
-                width: 0;
-                margin: 0;
+                position: absolute;
+                top: -3.5rem;
+                left: 50%;
+                transform: translate(-50%, 10px);
+                padding: 0 10px;
                 font-size: 0.8rem;
+                line-height: 1.8;
+                color: $text-dark;
+                background-color: $text-light;
+                border-radius: 5px;
                 transition: all 0.2s;
-            }
+                box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                opacity: 0;
 
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    width: 0;
+                    height: 0;
+                    border: 6px solid transparent;
+                    border-top-color: $text-light;
+                }
+            }
+            &:hover .name{
+                transform: translate(-50%, 0);
+                opacity: 1;
+            }
+            
             .icon{
                 display: block;
-                width: $footer-icon-size;
-                height: $footer-icon-size;
-                background-color: $blue-1;
+                width: 100%;
+                height: 100%;
                 border-radius: 100%;
-            }
-
-            &:hover .name{
-                width: 80px;
-                margin: 0 20px 0 15px;
             }
         }
     }

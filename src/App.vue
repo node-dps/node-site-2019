@@ -17,22 +17,22 @@
         <footer v-bind:class="footerColor">
             <p>Made with <span class="green">&hearts;</span> by <span class="green">Node</span></p>
             <div class="links">
-                <a class="link" href="" target="_blank" title="Behance">
+                <a class="link" href="https://www.behance.net/nodedps" target="_blank">
                     <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/behance-light.png">
                     <img class="icon" v-else src="./assets/icons/behance.png">
                     <p class="name">Behance</p>
                 </a>
-                <a class="link" href="" target="_blank" title="Twitter">
+                <a class="link" href="https://twitter.com/decode_node" target="_blank">
                     <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/twitter-light.png">
                     <img class="icon" v-else src="./assets/icons/twitter.png">
                     <p class="name">Twitter</p>
                 </a>
-                <a class="link" href="" target="_blank" title="Facebook">
+                <a class="link" href="https://www.facebook.com/node.dps/" target="_blank">
                     <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/facebook-light.png">
                     <img class="icon" v-else src="./assets/icons/facebook.png">
                     <p class="name">Facebook</p>
                 </a>
-                <a class="link" href="" target="_blank" title="Medium">
+                <a class="link" href="https://medium.com/nodedpsggn" target="_blank">
                     <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/medium-light.png">
                     <img class="icon" v-else src="./assets/icons/medium.png">
                     <p class="name">Medium</p>
