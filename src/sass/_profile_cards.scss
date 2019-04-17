@@ -1,5 +1,5 @@
 .member.alumni{
-	width: 300px;
+	width: 340px;
 	justify-content: stretch;
 }
 
@@ -58,6 +58,7 @@
 		padding: 0 10px;
         font-size: 0.9em;
         font-weight: normal;
+		font-family: 'open sans';
 		text-align: center;
 		text-transform: capitalize;
 	}
@@ -65,8 +66,10 @@
 	.info{
 		display: block;
 		width: 100%;
-		padding: 0 20px;
-		line-height: 1.8;
+		padding: 10px 40px;
+		line-height: 1.4;
+		font-size: 0.9rem;
+		font-family: 'open sans';
 		text-align: center;
 	}
 

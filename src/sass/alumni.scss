@@ -2,8 +2,13 @@
 @import './_profile_cards';
 
 .landing.first{
+    min-height: 0;
     height: 80vh;
     background-color: $blue-1;
+
+    *{
+        font-family: montserrat;
+    }
 
     @include below-desktop{
         height: 70vh;
@@ -31,6 +36,10 @@
     width: 100%;
     height: auto;
     background-color: $blue-1;
+
+    *{
+        font-family: montserrat;
+    }
 
     .ppl{
         display: flex;

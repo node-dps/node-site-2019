@@ -1,0 +1,89 @@
+@import '_common';
+
+.error{
+    padding: 50px;
+    color: $text-light;
+    background-color: $blue-1;
+
+    *{
+        margin: 0;
+        font-weight: normal;
+        text-align: center;
+        font-family: montserrat;
+    }
+
+    h1{
+        font-size: 5em;
+        letter-spacing: 5px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        margin-top: 0;
+    }
+
+    img{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 40vw;
+        max-width: 200px;
+        margin: 40px 0;
+    }
+    
+    p{
+        padding: 0 10px;
+
+        q{
+            display: block;
+            width: 100%;
+            margin: 20px 0;
+            font-style: italic;
+        }
+    }
+
+    .buttons{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        a{
+            margin: 10px;
+            padding: 8px 20px;
+            font-size: 0.8rem;
+            color: $text-accent-3;
+            border: 1px solid $text-accent-3;
+            border-radius: 8px;
+            transition: all 0.2s;
+
+            &:hover{
+                color: $text-light;
+                background-color: $blue-5;
+                border-color: $blue-5;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+        }
+    }
+
+    @include below-tablet {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        h1 {
+            font-size: 4em;
+        }
+
+        h2 {
+            font-size: 1.1em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+
+    }
+    
+}

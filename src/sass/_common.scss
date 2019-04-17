@@ -54,7 +54,7 @@ section.first{
     display: block;
     position: relative;
     width: 100%;
-    height: calc(100vh - 1.0*#{$nav-height});
+    min-height: calc(100vh - 1.0*#{$nav-height});
 }
 
 span.green{

@@ -11,7 +11,7 @@
                     <div class="member">
                         <div class="dp" style="background-image: url('../assets/members/ishan-manchanda.png');"><img src="../assets/members/ishan-manchanda.png"></div>
                         <h1 class="name">Ishan Manchanda</h1>
-                        <h2 class="desig"><span style="text-transform: none;">decodenode,</span> ScriptRoyale, CodecPro</h2>
+                        <h2 class="desig"><span style="text-transform: none; font-family: inherit">decodenode,</span> ScriptRoyale, CodecPro</h2>
                         <div class="container">
                             <div class="links">
                                 <a href="https://github.com/IshanManchanda" class="link" target="_blank"><img src="../assets/icons/github.png"></a>
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="importance"><br>Secretaries</div>
+                <!-- <div class="importance">Secretaries</div>
                 <div class="row">
                     <div class="member">
                         <div class="dp" style="background-image: url('../assets/members/blank.png');"><img src="../assets/members/blank.png"></div>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="importance"><br>Core Team</div>
+                <div class="importance">Core Team</div>
                 <div class="row">
                     <div class="member">
                         <div class="dp" style="background-image: url('../assets/members/prakhar-mittal.jpg');"><img src="../assets/members/prakhar-mittal.jpg"></div>
@@ -95,7 +95,7 @@
                     <div class="member">
                         <div class="dp" style="background-image: url('../assets/members/jainil-ajmera.jpeg');"><img src="../assets/members/jainil-ajmera.jpeg"></div>
                         <h1 class="name">Jainil Ajmera</h1>
-                        <h2 class="desig"><span style="text-transform: none;">decodenode,</span> Deprehendo</h2>
+                        <h2 class="desig"><span style="text-transform: none; font-family: inherit">decodenode</span>, Deprehendo</h2>
                         <div class="container">
                             <div class="links">
                                 <a href="https://jainilajmera.github.io" class="link" target="_blank"><img src="../assets/icons/website.png"></a>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="importance"><br>Members</div>
+                <div class="importance">Members</div>
                 <div class="row">
                     <div class="member">
                         <div class="dp" style="background-image: url('../assets/members/dev-malik.png');"><img src="../assets/members/dev-malik.png"></div>
