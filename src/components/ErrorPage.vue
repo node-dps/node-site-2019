@@ -9,7 +9,7 @@
             <p>The Great Kabootar hath many centuries ago prophesied: <q>Thou shall never be able to conquer this link.</q></p>
             <div class="buttons">
                 <a href="\">Return to safety</a>
-                <a href="mailto:node.dps.ggn@gmail.com">Hire a carrier pigeon</a>
+                <a href="mailto:node.dps.ggn@gmail.com?subject=Need a carrier pigeon&body=Please send help.">Hire a carrier pigeon</a>
             </div>
         </section>
     </div>
