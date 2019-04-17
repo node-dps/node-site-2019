@@ -15,7 +15,7 @@
         </nav>
         <router-view v-on:emit-footer-color="processFooterColor"></router-view>
         <footer v-bind:class="footerColor">
-            <p>Made with <span class="green">&hearts;</span> by <span class="green">Node</span></p>
+            <p>Made with <img src="./assets/icons/heart.svg" class="heart"> by <span class="green">Node</span></p>
             <div class="links">
                 <a class="link" href="https://www.behance.net/nodedps" target="_blank">
                     <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/behance-light.png">
