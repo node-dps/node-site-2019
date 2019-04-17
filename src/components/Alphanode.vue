@@ -8,8 +8,13 @@
 <script>
 export default {
     name: 'alphanode',
-    components: {
-
+    data: function(){
+        return{
+            footerColor: 'light'
+        }
+    },
+    mounted() {
+        this.$emit('emit-footer-color', this.footerColor);
     }
 }
 </script>

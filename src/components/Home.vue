@@ -57,7 +57,14 @@
 <script>
 export default {
     name: 'home',
+    data: function(){
+        return{
+            footerColor: 'dark'
+        }
+    },
     mounted() {
+        this.$emit('emit-footer-color', this.footerColor);
+
         setTimeout(() => {
             this.onloadAnims();
         }, 0);

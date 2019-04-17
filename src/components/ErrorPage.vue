@@ -6,7 +6,7 @@
             <img src="../assets/icons/kabootar.png">
             <!--<p>The page you are looking for does not exist.<br>
             <a href="\">Go back</a> or contact our admin at <a href="mailto:node.dps.ggn@gmail.com">node.dps.ggn@gmail.com</a></p>-->
-            <p>The Great Kabootar hath many centuries ago prophesised: <q>Thou shall never be able to conquer this link</q></p>
+            <p>The Great Kabootar hath many centuries ago prophesied: <q>Thou shall never be able to conquer this link.</q></p>
             <div class="buttons">
                 <a href="\">Return to safety</a>
                 <a href="mailto:node.dps.ggn@gmail.com">Hire a carrier pigeon</a>
@@ -17,8 +17,13 @@
 <script>
 export default {
     name: 'errorPage',
-    components: {
-
+    data: function(){
+        return{
+            footerColor: 'light'
+        }
+    },
+    mounted() {
+        this.$emit('emit-footer-color', this.footerColor);
     }
 }
 </script>

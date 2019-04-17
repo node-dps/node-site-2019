@@ -11,7 +11,10 @@ Vue.use(VueParticles)
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-    routes: Routes
+    routes: Routes,
+    scrollBehavior (to, from, savedPosition) {
+        return { x: 0, y: 0 }
+    }
 })
 
 Vue.config.productionTip = false

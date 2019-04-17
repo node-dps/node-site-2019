@@ -193,7 +193,15 @@
 <script>
 export default {
     name: 'members',
+    data: function(){
+        return{
+            footerColor: 'dark'
+        }
+    },
     mounted(){
+        this.$emit('emit-footer-color', this.footerColor);
+
+        this.onscrollAnims();
         window.addEventListener('scroll', this.onscrollAnims);
     },
     destroyed() {

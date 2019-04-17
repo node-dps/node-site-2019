@@ -15,11 +15,13 @@
     h1{
         font-size: 5em;
         letter-spacing: 5px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     }
 
     h2 {
         font-size: 1.3em;
         margin-top: 0;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     }
 
     img{
@@ -48,7 +50,6 @@
         height: auto;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
 
         a{
             margin: 10px;
@@ -65,6 +66,11 @@
                 border-color: $blue-5;
                 box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             }
+
+            @include below-tablet{
+                padding: 10px 14px;
+                line-height: 1.5;
+            }
         }
     }
 
@@ -77,11 +83,11 @@
         }
 
         h2 {
-            font-size: 1.1em;
+            font-size: 1em;
         }
 
         p {
-            font-size: 0.9em;
+            font-size: 1em;
         }
 
     }

@@ -8,8 +8,13 @@
 <script>
 export default {
     name: 'achievements',
-    components: {
-
+    data: function(){
+        return{
+            footerColor: 'dark'
+        }
+    },
+    mounted() {
+        this.$emit('emit-footer-color', this.footerColor);
     }
 }
 </script>
