@@ -61,7 +61,7 @@ div#view_container{
             border-color: $blue-5;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
-
+        
         @include below-special-point{
             right: 50%;
             transform: translate(50%, 0);
@@ -75,14 +75,14 @@ h1.heading{
     text-align: center;
 }
 
-p{
-    text-align: justify;
-    letter-spacing: 0.5px;
-}
-
 .info{
     display: block;
     padding: 60px 16%;
+    
+    & > p{
+        text-align: justify;
+        letter-spacing: 0.5px;
+    }
 }
 
 .events{
@@ -112,5 +112,100 @@ p{
         height: 4vw;
         clip-path: polygon(0 0, 0 100%, 100% 100%);
         background-color: $text-light;
+    }
+
+    .heading{
+        margin: 50px 0;
+    }
+
+    .event-container{
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 0 0 50px 0;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        .event{
+            display: flex;
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px 10px;
+            padding: 30px 40px 40px 40px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $blue-4;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.2s;
+
+            &:hover{
+                box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+            }
+
+            .name{
+                color: $blue-5;
+                margin: 10px 0;
+                font-size: 1.5rem;
+                font-weight: normal;
+            }
+            
+            .brief{
+                margin: 10px 0 30px 0;
+                text-align: justify;
+                font-size: 0.95rem;
+                letter-spacing: 0;
+            }
+
+            .specs{
+                width: 100%;
+                margin: 0;
+                text-align: left;
+                font-size: 0.8rem;
+            }
+
+            .prompt{
+                display: block;
+                padding: 8px 30px;
+                margin: 20px 0 0 0;
+                border-radius: 8px;
+                color: $blue-1;
+                border: 1px solid $blue-1;
+                transition: all 0.2s;
+
+                &:hover{
+                    color: $text-light;
+                    background-color: $blue-5;
+                    border-color: $blue-5;
+                }
+            }
+        }
+    }
+}
+
+.sponsors{
+    padding: 60px 8%;
+    margin: 0 0 60px 0;
+
+    .logo-container{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .logo{
+            display: block;
+            height: 50px;
+            margin: 20px;
+
+            img{
+                display: block;
+                height: 100%;
+            }
+        }
     }
 }

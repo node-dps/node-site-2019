@@ -18,8 +18,54 @@
             <h1 class="heading">Events</h1>
             <div class="event-container">
                 <div class="event">
-                    <h1 class="name">Create[x]</h1>
+                    <h1 class="name">CodecPro</h1>
+                    <p class="brief">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptatibus voluptate placeat quas, consequatur excepturi adipisci non quidem? Repellendus, maxime.</p>
+                    <p class="specs">Teams per School: 1</p>
+                    <p class="specs">Members per Team: 4</p>
+                    <a href="" class="prompt">Prompt</a>
                 </div>
+                <div class="event">
+                    <h1 class="name">CodecPro</h1>
+                    <p class="brief">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptatibus voluptate placeat quas, consequatur excepturi adipisci non quidem? Repellendus, maxime.</p>
+                    <p class="specs">Teams per School: 1</p>
+                    <p class="specs">Members per Team: 4</p>
+                    <a href="" class="prompt">Prompt</a>
+                </div>
+                <div class="event">
+                    <h1 class="name">CodecPro</h1>
+                    <p class="brief">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptatibus voluptate placeat quas, consequatur excepturi adipisci non quidem? Repellendus, maxime.</p>
+                    <p class="specs">Teams per School: 1</p>
+                    <p class="specs">Members per Team: 4</p>
+                    <a href="" class="prompt">Prompt</a>
+                </div>
+                <div class="event">
+                    <h1 class="name">CodecPro</h1>
+                    <p class="brief">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptatibus voluptate placeat quas, consequatur excepturi adipisci non quidem? Repellendus, maxime.</p>
+                    <p class="specs">Teams per School: 1</p>
+                    <p class="specs">Members per Team: 4</p>
+                    <a href="" class="prompt">Prompt</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sponsors">
+            <h1 class="heading">Sponsors</h1>
+            <div class="logo-container">
+                <a href="" class="logo" title="">
+                    <img src="../assets/icons/nodelogo.png">
+                </a>
+                <a href="" class="logo" title="">
+                    <img src="../assets/icons/nodelogo.png">
+                </a>
+                <a href="" class="logo" title="">
+                    <img src="../assets/icons/nodelogo.png">
+                </a>
+                <a href="" class="logo" title="">
+                    <img src="../assets/icons/nodelogo.png">
+                </a>
+                <a href="" class="logo" title="">
+                    <img src="../assets/icons/nodelogo.png">
+                </a>
             </div>
         </section>
     </div>
@@ -30,7 +76,7 @@ export default {
     data: function(){
         return{
             navColor: 'transparent-light',
-            footerColor: 'light'
+            footerColor: 'dark'
         }
     },
     mounted() {
