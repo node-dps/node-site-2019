@@ -59,7 +59,7 @@
                     <a href="" class="prompt">Prompt</a>
                 </div>
                 <div class="event">
-                    <h1 class="name">CodecPro</h1>
+                    <h1 class="name">codenode</h1>
                     <p class="brief">Description here</p>
                     <p class="specs">Teams per School: ∞</p>
                     <p class="specs">Members per Team: 1</p>
