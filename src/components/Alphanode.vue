@@ -18,7 +18,7 @@
             <ul>
                 <li>RoboCTRL: An autonomous robotics event with a fresh challenge, new robots and exciting battles every year.</li>
                 <li>ScriptRoyale: A first of its kind script vs script gaming event. May the best bot win!</li>
-                <li>Chorus: An audio mixing event.</li>
+                <li>Chorus: An audio mixing event that allows you to express your artistic talent.</li>
                 <li>Config[x]: A hardware event with a twist. And a purpose.</li>
             </ul>
         </section>

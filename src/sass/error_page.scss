@@ -5,7 +5,7 @@ div#view_container{
 }
 
 .error.first{
-    height: 100vh;
+    min-height: 100vh;
     padding: 50px;
     color: $text-light;
     background-color: $blue-1;
