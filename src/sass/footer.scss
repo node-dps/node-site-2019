@@ -1,6 +1,6 @@
 $footer-icon-size: 30px;
 $gmap-width: 375px;
-$gmap-height: 275px;
+$gmap-height: 220px;
 
 footer.light{
     background-color: $text-light;
@@ -111,9 +111,9 @@ footer{
             padding: 0;
 
             #gmap{
-                height: 150px;
+                height: 190px;
                 max-width: $gmap-width;
-                width: 90%;
+                width: 80%;
             }
 
             .information{
