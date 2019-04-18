@@ -21,6 +21,8 @@ $desktop-breakpoint: 1025px;
 $tablet-breakpoint: 750px;
 $mobile-breakpoint: 400px;
 
+$special-footer-breakpoint: 500px;
+
 @mixin below-desktop{
     @media only screen and (max-width: #{$desktop-breakpoint}){
         @content;
@@ -29,6 +31,12 @@ $mobile-breakpoint: 400px;
 
 @mixin below-tablet{
     @media only screen and (max-width: #{$tablet-breakpoint}){
+        @content;
+    }
+}
+
+@mixin footer-mobile{
+    @media only screen and (max-width: #{$special-footer-breakpoint}){
         @content;
     }
 }

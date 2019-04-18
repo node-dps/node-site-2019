@@ -7,10 +7,10 @@ footer.light{
     color: $text-dark;
 
     p.contact a{
-        color: $text-light;
-        background-color: $blue-1;
+        color: $text-accent-1;
         &:hover{
-            color: $text-accent-1;
+            color: $text-light;
+            background-color: $blue-1;
         }
     }
 
@@ -47,7 +47,7 @@ footer{
     }
     
     p.contact{
-        padding: 0 5px 15px 0;
+        padding: 0 0px 15px 0;
         a{
             margin: 3px 0;
             padding: 5px 5px;
@@ -65,15 +65,15 @@ footer{
     .content{
         display: flex;
         width: 100%;
-        padding: 0;
+        padding: 0 20px;
         justify-content: center;
         align-items: center;
 
         .information{
             display: flex;
             width: 375px;
-            padding: 0 20px;
-            margin-right: 20px;
+            padding: 0;
+            margin-right: 40px;
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
@@ -83,6 +83,13 @@ footer{
                 margin: 0 10px;
                 font-size: 0.8rem;
                 text-align: right;
+            }
+
+            .contact-details{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
@@ -94,6 +101,67 @@ footer{
         height: $gmap-height;
         border-radius: 5px;
         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+
+    @include below-desktop{
+        padding: 40px 0;
+
+        .content{
+            flex-direction: column-reverse;
+            padding: 0;
+
+            #gmap{
+                height: 150px;
+                max-width: $gmap-width;
+                width: 90%;
+            }
+
+            .information{
+                width: 100%;
+                margin: 50px 0 0 0;
+                flex-direction: row;
+                align-items: stretch;
+
+                p.intro{
+                    width: auto;
+                    text-align: right;
+                    margin: 0 20px;
+                }
+                .contact-details{
+
+                    .contact{
+                        margin: 0 0 10px 0;
+                        padding: 0px 0;
+                    }
+                    .links{
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+
+    @include footer-mobile{
+        .content{
+            flex-direction: column-reverse;
+
+            .information{
+                flex-direction: column;
+                
+                p.intro{
+                    text-align: center;
+                }
+                
+                .contact-details{
+                    .contact{
+                        margin: 20px 0;
+                    }
+                    .links{
+                        justify-content: center;
+                    }
+                }
+            }
+        }
     }
     // --END--
     
@@ -111,7 +179,7 @@ footer{
         height: $footer-icon-size;
         justify-content: flex-end;
         align-items: center;
-        margin: 0px 10px;
+        padding: 0px 5px;
 
         .link{
             display: flex;
