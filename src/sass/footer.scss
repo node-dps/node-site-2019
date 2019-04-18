@@ -1,4 +1,6 @@
 $footer-icon-size: 30px;
+$gmap-width: 375px;
+$gmap-height: 275px;
 
 footer.light{
     background-color: $text-light;
@@ -44,16 +46,19 @@ footer{
         text-align: center;
     }
     
-    p.contact a{
-        margin: 3px 0;
-        padding: 5px 5px;
-        font-size: 0.9em;
-        color: $text-accent-2;
-        border-radius: 100px;
-        transition: all 0.2s;
-        
-        &:hover{
-            background-color: $text-light;
+    p.contact{
+        padding: 0 5px;
+        a{
+            margin: 3px 0;
+            padding: 5px 5px;
+            font-size: 0.9em;
+            color: $text-accent-2;
+            border-radius: 100px;
+            transition: all 0.2s;
+            
+            &:hover{
+                background-color: $text-light;
+            }
         }
     }
 
@@ -66,19 +71,27 @@ footer{
 
         .information{
             display: flex;
-            width: 50%;
+            width: 375px;
             padding: 0 20px;
+            margin-right: 20px;
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
+
+            p.intro{
+                width: 100%;
+                margin: 0 10px;
+                font-size: 0.95em;
+                text-align: right;
+            }
         }
     }
 
     #gmap{
         display: block;
         position: relative;
-        width: 50%;
-        height: 300px;
+        width: $gmap-width;
+        height: $gmap-height;
         border-radius: 5px;
         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     }
@@ -116,7 +129,7 @@ footer{
             .name{
                 display: block;
                 position: absolute;
-                top: -2.5rem;
+                top: -2.6rem;
                 left: 50%;
                 transform: translate(-50%, 10px);
                 padding: 0 10px;

@@ -18,8 +18,8 @@
             <p class="made-with-love">Made with <img src="./assets/icons/heart.svg" class="heart"> by <span class="green">Node</span></p>
             <div class="content">
                 <div class="information">
-                    <p class="intro">Network of Digital Enthusiasts <br> Delhi Public School, Guragon</p>
-                    <p class="contact">Contact us: <a href="mailto:node.dps.ggn@gmail.com">node.dps.ggn@gmail.com</a></p>
+                    <p class="intro">Network of Digital Enthusiasts<br>Delhi Public School<br>Sector-45, Gurgaon</p>
+                    <p class="contact"><a href="mailto:node.dps.ggn@gmail.com">node.dps.ggn@gmail.com</a></p>
                     <div class="links">
                         <a class="link" href="https://www.behance.net/nodedps" target="_blank">
                             <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/behance-light.png">
