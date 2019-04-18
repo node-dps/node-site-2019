@@ -195,7 +195,7 @@ export default {
     name: 'members',
     data: function(){
         return{
-            navColor: 'light',
+            navColor: 'transparent-light',
             footerColor: 'dark'
         }
     },
@@ -204,12 +204,23 @@ export default {
         this.$emit('emit-footer-color', this.footerColor);
 
         this.onscrollAnims();
-        window.addEventListener('scroll', this.onscrollAnims);
+        window.addEventListener('scroll', this.onscrollHandler);
     },
     destroyed() {
-        window.removeEventListener('scroll', this.onscrollAnims);
+        window.removeEventListener('scroll', this.onscrollHandler);
     },
     methods: {
+        onscrollHandler: function(){
+            if(window.scrollY != 0){
+                this.navColor = 'light';
+                this.$emit('emit-nav-color', this.navColor);
+            }else{
+                this.navColor = 'transparent-light';
+                this.$emit('emit-nav-color', this.navColor);
+            }
+
+            this.onscrollAnims();
+        },
         onscrollAnims: function(){
             if(window.innerWidth >= 1025){
                 let scrolledFrac = $(window).scrollTop() / $(window).height();

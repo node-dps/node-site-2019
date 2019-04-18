@@ -1,9 +1,13 @@
 @import './_common';
 @import './_profile_cards';
 
+div#view_container{
+    padding-top: 0;
+}
+
 .landing.first{
     min-height: 0;
-    height: 80vh;
+    height: calc(80vh + #{$nav-height});
     background-color: $blue-1;
 
     *{
@@ -11,7 +15,7 @@
     }
 
     @include below-desktop{
-        height: 70vh;
+        height: calc(75vh + #{$nav-height});        
     }
 
     .title{
