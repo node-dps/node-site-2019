@@ -79,6 +79,14 @@ h1.heading{
         text-align: justify;
         letter-spacing: 0.5px;
     }
+
+    @include below-desktop {
+        padding: 60px 10%;
+    }
+
+    ul {
+        line-height: 1.8;
+    }
 }
 
 .events{
@@ -156,6 +164,7 @@ h1.heading{
                 text-align: left;
                 font-size: 0.95rem;
                 letter-spacing: 0;
+                width: 100%;
             }
 
             .specs{
@@ -197,7 +206,7 @@ h1.heading{
 
         .logo{
             display: block;
-            height: 50px;
+            height: 100px;
             margin: 20px;
 
             img{

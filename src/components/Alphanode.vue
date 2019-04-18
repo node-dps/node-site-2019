@@ -10,40 +10,133 @@
         </section>
 
         <section class="info">
-            <h1 class="heading">Some Title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure accusantium ipsa quo illo! Beatae aliquam eaque velit alias. Dolorum, a ipsa doloribus mollitia voluptatibus vel. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nesciunt doloribus libero dolorem? A, quaerat enim? Vero, qui! Delectus ut cupiditate ipsum qui eos blanditiis!</p>
+            <h1 class="heading">What is new?</h1>
+            <p>In its 5th iteration since its inception, Alphanode 2019 is poised to be drastically bigger and better than it has ever been
+                before. We have reimagined cryptic hunts with decodenode quests: a new story-based game mode that allows players to make
+                decisions and follow different paths. We are also introducing four new, unique events:
+            </p>
+            <ul>
+                <li>RoboCTRL: An autonomous robotics event with a fresh challenge, new robots and exciting battles every year.</li>
+                <li>ScriptRoyale: A first of its kind script vs script gaming event. May the best bot win!</li>
+                <li>Chorus: An audio mixing event.</li>
+                <li>Config[x]: A hardware event with a twist. And a purpose.</li>
+            </ul>
         </section>
 
         <section class="events">
             <h1 class="heading">Events</h1>
             <div class="event-container">
                 <div class="event">
-                    <h1 class="name">CodecPro</h1>
-                    <p class="brief">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptatibus voluptate placeat quas, consequatur excepturi adipisci non quidem? Repellendus, maxime.</p>
+                    <h1 class="name">Create[x]</h1>
+                    <p class="brief">Description here</p>
                     <p class="specs">Teams per School: 1</p>
                     <p class="specs">Members per Team: 4</p>
+                    <p class="specs">Eligibility: IX to XII</p>
+                    <a href="" class="prompt">Prompt</a>
+                </div>
+                <div class="event">
+                    <h1 class="name">decodenode</h1>
+                    <p class="brief">Description here</p>
+                    <p class="specs">Teams per School: ∞</p>
+                    <p class="specs">Members per Team: 1</p>
+                    <p class="specs">Eligibility: IX to XII</p>
+                    <a href="" class="prompt">Link</a>
+                </div>
+                <div class="event">
+                    <h1 class="name">RoboCTRL</h1>
+                    <p class="brief">Description here</p>
+                    <p class="specs">Teams per School: 1</p>
+                    <p class="specs">Members per Team: 3</p>
+                    <p class="specs">Eligibility: IX to XII</p>
+                    <a href="" class="prompt">Prompt</a>
+                </div>
+                <div class="event">
+                    <h1 class="name">ScriptRoyale</h1>
+                    <p class="brief">Description here</p>
+                    <p class="specs">Teams per School: 1</p>
+                    <p class="specs">Members per Team: 2</p>
+                    <p class="specs">Eligibility: IX to XII</p>
                     <a href="" class="prompt">Prompt</a>
                 </div>
                 <div class="event">
                     <h1 class="name">CodecPro</h1>
-                    <p class="brief">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptatibus voluptate placeat quas, consequatur excepturi adipisci non quidem? Repellendus, maxime.</p>
+                    <p class="brief">Description here</p>
+                    <p class="specs">Teams per School: ∞</p>
+                    <p class="specs">Members per Team: 1</p>
+                    <p class="specs">Eligibility: IX to XII</p>
+                    <a href="" class="prompt">Link</a>
+                </div>
+                <div class="event">
+                    <h1 class="name">PhotoBuild</h1>
+                    <p class="brief">Description here</p>
                     <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 4</p>
+                    <p class="specs">Members per Team: 2</p>
+                    <p class="specs">Eligibility: IX to XII</p>
                     <a href="" class="prompt">Prompt</a>
                 </div>
                 <div class="event">
-                    <h1 class="name">CodecPro</h1>
-                    <p class="brief">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptatibus voluptate placeat quas, consequatur excepturi adipisci non quidem? Repellendus, maxime.</p>
-                    <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 4</p>
+                    <h1 class="name">Chorus</h1>
+                    <p class="brief">Description here</p>
+                    <p class="specs">Teams per School: ∞</p>
+                    <p class="specs">Members per Team: 1</p>
+                    <p class="specs">Eligibility: IX to XII</p>
                     <a href="" class="prompt">Prompt</a>
                 </div>
                 <div class="event">
-                    <h1 class="name">CodecPro</h1>
-                    <p class="brief">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptatibus voluptate placeat quas, consequatur excepturi adipisci non quidem? Repellendus, maxime.</p>
+                    <h1 class="name">InFocus</h1>
+                    <p class="brief">Description here</p>
                     <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 4</p>
+                    <p class="specs">Members per Team: 2</p>
+                    <p class="specs">Eligibility: IX to XII</p>
                     <a href="" class="prompt">Prompt</a>
+                </div>
+                <div class="event">
+                    <h1 class="name">Config[x]</h1>
+                    <p class="brief">Description here</p>
+                    <p class="specs">Teams per School: ∞</p>
+                    <p class="specs">Members per Team: 1</p>
+                    <p class="specs">Eligibility: IX to XII</p>
+                    <a href="" class="prompt">Prompt</a>
+                </div>
+                <div class="event">
+                    <h1 class="name">mSway</h1>
+                    <p class="brief">Description here</p>
+                    <p class="specs">Teams per School: 1</p>
+                    <p class="specs">Members per Team: 2</p>
+                    <p class="specs">Eligibility: IX</p>
+                    <a href="" class="prompt">Prompt</a>
+                </div>
+                <div class="event">
+                    <h1 class="name">Intellect</h1>
+                    <p class="brief">Description here</p>
+                    <p class="specs">Teams per School: 1</p>
+                    <p class="specs">Members per Team: 2</p>
+                    <p class="specs">Eligibility: IX to XII</p>
+                    <a href="" class="prompt">Rules</a>
+                </div>
+                <div class="event">
+                    <h1 class="name">Geekathon</h1>
+                    <p class="brief">Description here</p>
+                    <p class="specs">Teams per School: 1</p>
+                    <p class="specs">Members per Team: 1</p>
+                    <p class="specs">Eligibility: IX to XII</p>
+                    <a href="" class="prompt">Rules</a>
+                </div>
+                <div class="event">
+                    <h1 class="name">Analogous</h1>
+                    <p class="brief">Description here</p>
+                    <p class="specs">Teams per School: 1</p>
+                    <p class="specs">Members per Team: 2</p>
+                    <p class="specs">Eligibility: IX to XII</p>
+                    <a href="" class="prompt">Rules</a>
+                </div>
+                <div class="event">
+                    <h1 class="name">Deprehendo</h1>
+                    <p class="brief">Description here</p>
+                    <p class="specs">Teams per School: 1</p>
+                    <p class="specs">Members per Team: 2</p>
+                    <p class="specs">Eligibility: IX to XII</p>
+                    <a href="" class="prompt">Rules</a>
                 </div>
             </div>
         </section>
@@ -52,19 +145,19 @@
             <h1 class="heading">Sponsors</h1>
             <div class="logo-container">
                 <a href="" class="logo" title="">
-                    <img src="../assets/icons/nodelogo.png">
+                    <img src="../assets/icons/sponsor-blank.png">
                 </a>
                 <a href="" class="logo" title="">
-                    <img src="../assets/icons/nodelogo.png">
+                    <img src="../assets/icons/sponsor-blank.png">
                 </a>
                 <a href="" class="logo" title="">
-                    <img src="../assets/icons/nodelogo.png">
+                    <img src="../assets/icons/sponsor-blank.png">
                 </a>
                 <a href="" class="logo" title="">
-                    <img src="../assets/icons/nodelogo.png">
+                    <img src="../assets/icons/sponsor-blank.png">
                 </a>
                 <a href="" class="logo" title="">
-                    <img src="../assets/icons/nodelogo.png">
+                    <img src="../assets/icons/sponsor-blank.png">
                 </a>
             </div>
         </section>
