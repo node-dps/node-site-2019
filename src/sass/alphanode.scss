@@ -1,1 +1,116 @@
 @import './_common';
+
+div#view_container{
+    padding-top: 0;
+}
+
+.landing.first{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    color: $text-light;
+    background-color: $blue-1;
+
+    *{
+        margin: 0;
+        font-family: montserrat;
+    }
+
+    .alphanode{
+        z-index: 1;
+
+        .main{
+            font-size: 4rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .year{
+            text-align: right;
+            color: $text-accent-3;
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        @include below-special-point{
+            transform: scale(0.7) !important;
+        }
+
+        @include below-special-point-2{
+            transform: scale(0.8);
+        }
+    }
+
+    .register-result{
+        display: block;
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        color: $text-accent-3;
+        border: 1px solid $text-accent-3;
+        border-radius: 8px;
+        transition: all 0.2s;
+        z-index: 1;
+        
+        &:hover{
+            color: $text-light;
+            background-color: $blue-5;
+            border-color: $blue-5;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        @include below-special-point{
+            right: 50%;
+            transform: translate(50%, 0);
+        }
+    }
+}
+
+h1.heading{
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+.info{
+    display: block;
+    padding: 60px 16%;
+}
+
+.events{
+    display: block;
+    position: relative;
+    padding: 60px 8%;
+    background-color: $blue-3;
+
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 4vw;
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+        background-color: $text-light;
+    }
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4vw;
+        clip-path: polygon(0 0, 0 100%, 100% 100%);
+        background-color: $text-light;
+    }
+}

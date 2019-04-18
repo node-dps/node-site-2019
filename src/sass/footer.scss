@@ -7,7 +7,7 @@ footer.light{
     color: $text-dark;
 
     p.contact a{
-        color: $text-accent-1;
+        color: $text-accent-2;
         &:hover{
             color: $text-light;
             background-color: $blue-1;
@@ -141,7 +141,7 @@ footer{
         }
     }
 
-    @include footer-mobile{
+    @include below-special-point{
         .content{
             flex-direction: column-reverse;
 

@@ -1,19 +1,19 @@
 <template>
     <div id="page_container">
-        <nav class="navbar">
+        <nav class="navbar" v-bind:class="navColor">
             <div class="cross" v-on:click="showNav = !showNav" v-bind:class="{'show': showNav}">
                 <span class="one"></span>
                 <span class="two"></span>
                 <span class="three"></span>
             </div>
-            <div class="icons">
+            <div class="icons" v-bind:class="{'show': showNav}">
                 <router-link to="/" @click.native="showNav = false"><img src="./assets/icons/nodelogo.png" class="logo"></router-link>
             </div>
             <div class="links" v-bind:class="{'show': showNav}">
                 <router-link v-for="item in navbar" :key="item.$index" :to="item.href" @click.native="showNav = false" class="nav-item">{{ item.name }}</router-link>
             </div>
         </nav>
-        <router-view v-on:emit-footer-color="processFooterColor"></router-view>
+        <router-view v-on:emit-footer-color="processFooterColor" v-on:emit-nav-color="processNavColor"></router-view>
         <footer v-bind:class="footerColor">
             <p class="made-with-love">Made with <img src="./assets/icons/heart.svg" class="heart"> by <span class="green">Node</span></p>
             <div class="content">
@@ -54,7 +54,8 @@ export default {
         return {
             showNav: false,
             scrollPos: 0,
-            footerColor: 'null',
+            navColor: 'light',
+            footerColor: 'dark',
             navbar: [{
                     name: "Alphanode",
                     href: "alphanode"
@@ -102,6 +103,9 @@ export default {
     methods: {
         processFooterColor: function(color){
             this.footerColor = color;
+        },
+        processNavColor: function(color){
+            this.navColor = color;
         },
         navbarScrollHandler: function() {
             if(!this.showNav && window.scrollY > 54){

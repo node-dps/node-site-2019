@@ -10,10 +10,12 @@ export default {
     name: 'achievements',
     data: function(){
         return{
+            navColor: 'light',
             footerColor: 'dark'
         }
     },
     mounted() {
+        this.$emit('emit-nav-color', this.navColor);
         this.$emit('emit-footer-color', this.footerColor);
     }
 }

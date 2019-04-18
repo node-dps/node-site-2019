@@ -1,5 +1,105 @@
 @import './_common';
 
+.navbar.light{
+    color: $text-dark;
+    background-color: $text-light;
+
+    .cross{
+        color: $text-dark;
+
+        &.show{
+            color: $text-dark;
+        }
+    }
+
+    .icons{
+        @include below-desktop{
+            background-color: $text-light;
+
+            &.show{
+                background-color: $text-light;
+            }
+        }
+    }
+
+    .links{
+
+        @include below-desktop{
+            background-color: $text-light;
+
+            &.show{
+                background-color: $text-light;
+                
+                .nav-item{
+                    color: $text-dark;
+
+                    &:hover{
+                        color: $blue-1;
+                    }
+                }
+            }
+        }
+
+        .nav-item{
+            color: $text-dark;
+
+            &:hover{
+                color: $blue-1;
+            }
+        }
+    }
+}
+
+.navbar.transparent-light{
+    color: $text-light;
+    background-color: transparent;
+
+    .cross{
+        color: $text-light;
+
+        &.show{
+            color: $text-dark;
+        }
+    }
+
+    .icons{
+        @include below-desktop{
+            background-color: transparent;
+
+            &.show{
+                background-color: $text-light;
+            }
+        }
+    }
+
+    .links{
+        @include below-desktop{
+            background-color: transparent;
+
+            &.show{
+                background-color: $text-light;
+
+                .nav-item{
+                    color: $text-dark;
+
+                    &:hover{
+                        color: $blue-1;
+                    }
+                }
+            }
+        }
+
+        .nav-item{
+            color: $text-light;
+
+            &:hover{
+                color: $text-light;
+            }
+        }
+
+    }
+}
+
 .navbar{
     display: flex;
     position: fixed;
@@ -9,10 +109,9 @@
     height: $nav-height;
     justify-content: flex-start;
     align-items: center;
-    background-color: $text-light;
     z-index: 3;
 
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, all 0.2s;
 
     @include below-desktop{
         height: auto;
@@ -46,7 +145,7 @@
             transform: translate(-50%, 0);
             width: 20px;
             height: 2px;
-            background-color: $blue-2;
+            background-color: currentColor;
             transition: all 0.2s;
         }
         &.show > .one{
@@ -60,7 +159,7 @@
             transform: translate(-50%, -50%);
             width: 20px;
             height: 2px;
-            background-color: $blue-2;
+            background-color: currentColor;
             transition: all 0.2s;
         }
         &.show > .two{
@@ -74,7 +173,7 @@
             transform: translate(-50%, 0);
             width: 20px;
             height: 2px;
-            background-color: $blue-2;
+            background-color: currentColor;
             transition: all 0.2s;
         }
         &.show > .three{
@@ -95,7 +194,6 @@
             margin: 0;
             padding: 4px 0 0 0;
             justify-content: center;
-            background-color: $text-light;
         }
 
         a{
@@ -124,7 +222,6 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            background-color: $text-light;
             transition: all 0.2s;
 
             &.show{
@@ -141,10 +238,6 @@
             @include below-desktop{
                 font-size: 1rem;
                 margin: 12px 0;
-            }
-
-            &:hover{
-                color: $blue-1;
             }
 
             &::after{

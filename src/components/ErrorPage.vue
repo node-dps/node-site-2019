@@ -19,10 +19,12 @@ export default {
     name: 'errorPage',
     data: function(){
         return{
+            navColor: 'light',
             footerColor: 'light'
         }
     },
     mounted() {
+        this.$emit('emit-nav-color', this.navColor);
         this.$emit('emit-footer-color', this.footerColor);
     }
 }
