@@ -1,20 +1,25 @@
 <template>
     <div id="page_container">
-        <nav class="navbar" v-bind:class="navColor">
-            <div class="cross" v-on:click="showNav = !showNav" v-bind:class="{'show': showNav}">
+        <nav v-if="showNav" class="navbar" v-bind:class="navColor">
+            <div class="cross" v-on:click="expandNav = !expandNav" v-bind:class="{'show': expandNav}">
                 <span class="one"></span>
                 <span class="two"></span>
                 <span class="three"></span>
             </div>
-            <div class="icons" v-bind:class="{'show': showNav}">
-                <router-link to="/" @click.native="showNav = false"><img src="./assets/icons/nodelogo.png" class="logo"></router-link>
+            <div class="icons" v-bind:class="{'show': expandNav}">
+                <router-link to="/" @click.native="expandNav = false"><img src="./assets/icons/nodelogo.png" class="logo"></router-link>
             </div>
-            <div class="links" v-bind:class="{'show': showNav}">
-                <router-link v-for="item in navbar" :key="item.$index" :to="item.href" @click.native="showNav = false" class="nav-item">{{ item.name }}</router-link>
+            <div class="links" v-bind:class="{'show': expandNav}">
+                <router-link v-for="item in navbar" :key="item.$index" :to="item.href" @click.native="expandNav = false" class="nav-item">{{ item.name }}</router-link>
             </div>
         </nav>
-        <router-view v-on:emit-footer-color="processFooterColor" v-on:emit-nav-color="processNavColor"></router-view>
-        <footer v-bind:class="footerColor">
+        <router-view
+            v-on:emit-footer-color="processFooterColor"
+            v-on:emit-nav-color="processNavColor"
+            v-on:emit-no-nav="removeNav"
+            v-on:emit-no-footer="removeFooter"
+        ></router-view>
+        <footer v-if="showFooter" v-bind:class="footerColor">
             <p class="made-with-love">Made with <img src="./assets/icons/heart.svg" class="heart"> by <span class="green">Node</span></p>
             <div class="content">
                 <div class="information">
@@ -52,7 +57,9 @@ export default {
     name: "app",
     data: function() {
         return {
-            showNav: false,
+            showNav: true,
+            showFooter: true,
+            expandNav: false,
             scrollPos: 0,
             navColor: 'light',
             footerColor: 'dark',
@@ -107,8 +114,14 @@ export default {
         processNavColor: function(color){
             this.navColor = color;
         },
+        removeFooter: function(val){
+            this.showFooter = !val;
+        },
+        removeNav: function(val){
+            this.showNav = !val;
+        },
         navbarScrollHandler: function() {
-            if(!this.showNav && window.scrollY > 54){
+            if(!this.expandNav && window.scrollY > 54){
                 if (window.scrollY > this.scrollPos) {
                     document.querySelector('.navbar').style.transform = 'translate(-50%, -72px)';
                 } else {

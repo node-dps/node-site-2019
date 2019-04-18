@@ -1,6 +1,11 @@
 @import '_common';
 
-.error{
+div#view_container{
+    padding-top: 0;
+}
+
+.error.first{
+    height: 100vh;
     padding: 50px;
     color: $text-light;
     background-color: $blue-1;
