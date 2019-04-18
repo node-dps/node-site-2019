@@ -15,33 +15,37 @@
         </nav>
         <router-view v-on:emit-footer-color="processFooterColor"></router-view>
         <footer v-bind:class="footerColor">
-            <p>Made with <img src="./assets/icons/heart.svg" class="heart"> by <span class="green">Node</span></p>
-            <div class="links">
-                <a class="link" href="https://www.behance.net/nodedps" target="_blank">
-                    <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/behance-light.png">
-                    <img class="icon" v-else src="./assets/icons/behance.png">
-                    <p class="name">Behance</p>
-                </a>
-                <a class="link" href="https://twitter.com/decode_node" target="_blank">
-                    <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/twitter-light.png">
-                    <img class="icon" v-else src="./assets/icons/twitter.png">
-                    <p class="name">Twitter</p>
-                </a>
-                <a class="link" href="https://www.facebook.com/node.dps/" target="_blank">
-                    <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/facebook-light.png">
-                    <img class="icon" v-else src="./assets/icons/facebook.png">
-                    <p class="name">Facebook</p>
-                </a>
-                <a class="link" href="https://medium.com/nodedpsggn" target="_blank">
-                    <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/medium-light.png">
-                    <img class="icon" v-else src="./assets/icons/medium.png">
-                    <p class="name">Medium</p>
-                </a>
+            <p class="made-with-love">Made with <img src="./assets/icons/heart.svg" class="heart"> by <span class="green">Node</span></p>
+            <div class="content">
+                <div class="information">
+                    <p class="intro">Network of Digital Enthusiasts <br> Delhi Public School, Guragon</p>
+                    <p class="contact">Contact us: <a href="mailto:node.dps.ggn@gmail.com">node.dps.ggn@gmail.com</a></p>
+                    <div class="links">
+                        <a class="link" href="https://www.behance.net/nodedps" target="_blank">
+                            <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/behance-light.png">
+                            <img class="icon" v-else src="./assets/icons/behance.png">
+                            <p class="name">Behance</p>
+                        </a>
+                        <a class="link" href="https://twitter.com/decode_node" target="_blank">
+                            <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/twitter-light.png">
+                            <img class="icon" v-else src="./assets/icons/twitter.png">
+                            <p class="name">Twitter</p>
+                        </a>
+                        <a class="link" href="https://www.facebook.com/node.dps/" target="_blank">
+                            <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/facebook-light.png">
+                            <img class="icon" v-else src="./assets/icons/facebook.png">
+                            <p class="name">Facebook</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="gmap"></div>
             </div>
         </footer>
     </div>
 </template>
 <script>
+import gmaps from './js/gmaps.js';
+
 export default {
     name: "app",
     data: function() {
@@ -74,6 +78,21 @@ export default {
             document.querySelector('.navbar').style.transform = 'translate(-50%, 0)';
         }, 0);
         window.addEventListener('scroll', this.navbarScrollHandler);
+    },
+    async mounted(){
+        try {
+            const google = await gmaps();
+
+            let mapProp= {
+                center:new google.maps.LatLng(28.442048,77.064731),
+                zoom:18,
+            };
+
+            const map = new google.maps.Map(document.getElementById('gmap'), mapProp);
+
+        } catch (error) {
+            console.error(error);
+        }
     },
     destroyed() {
         window.removeEventListener('scroll', this.navbarScrollHandler);
