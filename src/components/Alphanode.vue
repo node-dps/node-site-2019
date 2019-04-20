@@ -15,12 +15,16 @@
                 before. We have reimagined cryptic hunts with decodenode quests: a new story-based game mode that allows players to make
                 decisions and follow different paths. We are also introducing four new, unique events:
             </p>
-            <ul>
-                <li>RoboCTRL: An autonomous robotics event with a fresh challenge, new robots and exciting battles every year.</li>
-                <li>ScriptRoyale: A first of its kind script vs script gaming event. May the best bot win!</li>
-                <li>Chorus: An audio mixing event that allows you to express your artistic talent.</li>
-                <li>Config[x]: A hardware event with a twist. And a purpose.</li>
-            </ul>
+            <dl>
+                <dt>RoboCTRL</dt>
+                <dd>An autonomous robotics event with a fresh challenge, new robots and exciting battles every year.</dd>
+                <dt>ScriptRoyale</dt>
+                <dd>A first of its kind script vs script gaming event. May the best bot win!</dd>
+                <dt>Chorus</dt>
+                <dd>An audio mixing event that allows you to express your artistic talent.</dd>
+                <dt>Config[x]</dt>
+                <dd>A hardware event with a twist. And a purpose.</dd>
+            </dl>
         </section>
 
         <section class="events">
@@ -32,7 +36,9 @@
                     <p class="specs">Teams per School: 1</p>
                     <p class="specs">Members per Team: 4</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Prompt</a>
+                    <a href="" class="button">
+                        Prompt
+                    </a>
                 </div>
                 <div class="event">
                     <h1 class="name">decodenode</h1>
@@ -40,7 +46,7 @@
                     <p class="specs">Teams per School: ∞</p>
                     <p class="specs">Members per Team: 1</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Link</a>
+                    <a href="" class="button">Link</a>
                 </div>
                 <div class="event">
                     <h1 class="name">RoboCTRL</h1>
@@ -48,7 +54,7 @@
                     <p class="specs">Teams per School: 1</p>
                     <p class="specs">Members per Team: 3</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Prompt</a>
+                    <a href="" class="button">Prompt</a>
                 </div>
                 <div class="event">
                     <h1 class="name">ScriptRoyale</h1>
@@ -56,7 +62,7 @@
                     <p class="specs">Teams per School: 1</p>
                     <p class="specs">Members per Team: 2</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Prompt</a>
+                    <a href="" class="button">Prompt</a>
                 </div>
                 <div class="event">
                     <h1 class="name">codenode</h1>
@@ -64,7 +70,7 @@
                     <p class="specs">Teams per School: ∞</p>
                     <p class="specs">Members per Team: 1</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Link</a>
+                    <a href="" class="button">Link</a>
                 </div>
                 <div class="event">
                     <h1 class="name">PhotoBuild</h1>
@@ -72,7 +78,7 @@
                     <p class="specs">Teams per School: 1</p>
                     <p class="specs">Members per Team: 2</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Prompt</a>
+                    <a href="" class="button">Prompt</a>
                 </div>
                 <div class="event">
                     <h1 class="name">Chorus</h1>
@@ -80,7 +86,7 @@
                     <p class="specs">Teams per School: ∞</p>
                     <p class="specs">Members per Team: 1</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Prompt</a>
+                    <a href="" class="button">Prompt</a>
                 </div>
                 <div class="event">
                     <h1 class="name">InFocus</h1>
@@ -88,7 +94,7 @@
                     <p class="specs">Teams per School: 1</p>
                     <p class="specs">Members per Team: 2</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Prompt</a>
+                    <a href="" class="button">Prompt</a>
                 </div>
                 <div class="event">
                     <h1 class="name">Config[x]</h1>
@@ -96,7 +102,7 @@
                     <p class="specs">Teams per School: ∞</p>
                     <p class="specs">Members per Team: 1</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Prompt</a>
+                    <a href="" class="button">Prompt</a>
                 </div>
                 <div class="event">
                     <h1 class="name">mSway</h1>
@@ -104,7 +110,7 @@
                     <p class="specs">Teams per School: 1</p>
                     <p class="specs">Members per Team: 2</p>
                     <p class="specs">Eligibility: IX</p>
-                    <a href="" class="prompt">Prompt</a>
+                    <a href="" class="button">Prompt</a>
                 </div>
                 <div class="event">
                     <h1 class="name">Intellect</h1>
@@ -112,7 +118,7 @@
                     <p class="specs">Teams per School: 1</p>
                     <p class="specs">Members per Team: 2</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Rules</a>
+                    <a href="" class="button">Rules</a>
                 </div>
                 <div class="event">
                     <h1 class="name">Geekathon</h1>
@@ -120,7 +126,7 @@
                     <p class="specs">Teams per School: 1</p>
                     <p class="specs">Members per Team: 1</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Rules</a>
+                    <a href="" class="button">Rules</a>
                 </div>
                 <div class="event">
                     <h1 class="name">Analogous</h1>
@@ -128,7 +134,7 @@
                     <p class="specs">Teams per School: 1</p>
                     <p class="specs">Members per Team: 2</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Rules</a>
+                    <a href="" class="button">Rules</a>
                 </div>
                 <div class="event">
                     <h1 class="name">Deprehendo</h1>
@@ -136,7 +142,7 @@
                     <p class="specs">Teams per School: 1</p>
                     <p class="specs">Members per Team: 2</p>
                     <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="prompt">Rules</a>
+                    <a href="" class="button">Rules</a>
                 </div>
             </div>
         </section>
@@ -187,6 +193,35 @@ export default {
                 this.navColor = 'transparent-light';
                 this.$emit('emit-nav-color', this.navColor);
             }
+        },
+        timer: function(){
+            // Set the date we're counting down to
+            let countDownDate = new Date("July 10, 2020 00:00:00").getTime();
+
+            // Update the count down every 1 second
+            let x = setInterval(function() {
+                // Get todays date and time
+                let now = new Date().getTime();
+
+                // Find the time between now and the count down date
+                let diff = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+                // If the count down is finished, write some text 
+                if (diff <= 0) {
+                    clearInterval(x);
+                    document.getElementById("timer").innerHTML = "EXPIRED";
+                }
+            }, 1000);
         }
     }
 }
