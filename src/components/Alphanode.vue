@@ -44,6 +44,22 @@
                         </a>
                     </div>
                     <div class="event">
+                        <h1 class="name">RoboCTRL</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 3</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Prompt</a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">Analogous</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Rules</a>
+                    </div>
+                    <div class="event">
                         <h1 class="name">Deprehendo</h1>
                         <p class="brief">Description here</p>
                         <p class="specs">Teams per School: 1</p>
@@ -60,23 +76,7 @@
                         <a target="_blank" class="button">Rules</a>
                     </div>
                     <div class="event">
-                        <h1 class="name">RoboCTRL</h1>
-                        <p class="brief">Description here</p>
-                        <p class="specs">Teams per School: 1</p>
-                        <p class="specs">Members per Team: 3</p>
-                        <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Prompt</a>
-                    </div>
-                    <div class="event">
                         <h1 class="name">Intellect</h1>
-                        <p class="brief">Description here</p>
-                        <p class="specs">Teams per School: 1</p>
-                        <p class="specs">Members per Team: 2</p>
-                        <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Rules</a>
-                    </div>
-                    <div class="event">
-                        <h1 class="name">Analogous</h1>
                         <p class="brief">Description here</p>
                         <p class="specs">Teams per School: 1</p>
                         <p class="specs">Members per Team: 2</p>
@@ -96,10 +96,21 @@
                 <h1 class="heading">Online Events</h1>
                 <div class="row online">
                     <div class="event">
-                        <h1 class="name">Chorus</h1>
+                        <h1 class="name">decodenode</h1>
                         <p class="brief">Description here</p>
                         <p class="specs">Teams per School: ∞</p>
                         <p class="specs">Members per Team: 1</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button lock">
+                            Link
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">ScriptRoyale</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
                         <p class="specs">Eligibility: IX to XII</p>
                         <a target="_blank" class="button">Prompt</a>
                     </div>
@@ -112,19 +123,11 @@
                         <a target="_blank" class="button">Link</a>
                     </div>
                     <div class="event">
-                        <h1 class="name">ScriptRoyale</h1>
+                        <h1 class="name">Chorus</h1>
                         <p class="brief">Description here</p>
-                        <p class="specs">Teams per School: 1</p>
-                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Teams per School: ∞</p>
+                        <p class="specs">Members per Team: 1</p>
                         <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Prompt</a>
-                    </div>
-                    <div class="event">
-                        <h1 class="name">mSway</h1>
-                        <p class="brief">Description here</p>
-                        <p class="specs">Teams per School: 1</p>
-                        <p class="specs">Members per Team: 2</p>
-                        <p class="specs">Eligibility: IX</p>
                         <a target="_blank" class="button">Prompt</a>
                     </div>
                     <div class="event">
@@ -144,15 +147,12 @@
                         <a target="_blank" class="button">Prompt</a>
                     </div>
                     <div class="event">
-                        <h1 class="name">decodenode</h1>
+                        <h1 class="name">mSway</h1>
                         <p class="brief">Description here</p>
-                        <p class="specs">Teams per School: ∞</p>
-                        <p class="specs">Members per Team: 1</p>
-                        <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button lock">
-                            Link
-                            <div class="countdown" data-end-date="July 10, 2019"></div>
-                        </a>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Eligibility: IX</p>
+                        <a target="_blank" class="button">Prompt</a>
                     </div>
                 </div>
             </div>
