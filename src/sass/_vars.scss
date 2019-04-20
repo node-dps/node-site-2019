@@ -23,6 +23,8 @@ $mobile-breakpoint: 400px;
 
 $special-breakpoint: 500px;
 $special-breakpoint-2: 600px;
+$special-breakpoint-3: 300px;
+$special-breakpoint-4: 920px;
 
 @mixin below-desktop{
     @media only screen and (max-width: #{$desktop-breakpoint}){
@@ -43,6 +45,16 @@ $special-breakpoint-2: 600px;
 }
 @mixin below-special-point-2{
     @media only screen and (max-width: #{$special-breakpoint-2}){
+        @content;
+    }
+}
+@mixin below-special-point-3{
+    @media only screen and (max-width: #{$special-breakpoint-3}){
+        @content;
+    }
+}
+@mixin below-special-point-4{
+    @media only screen and (max-width: #{$special-breakpoint-4}){
         @content;
     }
 }

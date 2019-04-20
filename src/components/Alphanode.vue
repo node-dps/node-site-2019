@@ -28,121 +28,132 @@
         </section>
 
         <section class="events">
-            <h1 class="heading">Events</h1>
+            <!-- <h1 class="heading">Events</h1> -->
             <div class="event-container">
-                <div class="event">
-                    <h1 class="name">Create[x]</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 4</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">
-                        Prompt
-                    </a>
+                <h1 class="heading">Onsite Events</h1>
+                <div class="row onsite">
+                    <div class="event">
+                        <h1 class="name">Create[x]</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 4</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button lock">
+                            Prompt
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">Deprehendo</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Rules</a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">Geekathon</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 1</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Rules</a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">RoboCTRL</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 3</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Prompt</a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">Intellect</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Rules</a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">Analogous</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Rules</a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">PhotoBuild</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Prompt</a>
+                    </div>
                 </div>
-                <div class="event">
-                    <h1 class="name">decodenode</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: ∞</p>
-                    <p class="specs">Members per Team: 1</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">Link</a>
-                </div>
-                <div class="event">
-                    <h1 class="name">RoboCTRL</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 3</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">Prompt</a>
-                </div>
-                <div class="event">
-                    <h1 class="name">ScriptRoyale</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 2</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">Prompt</a>
-                </div>
-                <div class="event">
-                    <h1 class="name">codenode</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: ∞</p>
-                    <p class="specs">Members per Team: 1</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">Link</a>
-                </div>
-                <div class="event">
-                    <h1 class="name">PhotoBuild</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 2</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">Prompt</a>
-                </div>
-                <div class="event">
-                    <h1 class="name">Chorus</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: ∞</p>
-                    <p class="specs">Members per Team: 1</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">Prompt</a>
-                </div>
-                <div class="event">
-                    <h1 class="name">InFocus</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 2</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">Prompt</a>
-                </div>
-                <div class="event">
-                    <h1 class="name">Config[x]</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: ∞</p>
-                    <p class="specs">Members per Team: 1</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">Prompt</a>
-                </div>
-                <div class="event">
-                    <h1 class="name">mSway</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 2</p>
-                    <p class="specs">Eligibility: IX</p>
-                    <a href="" class="button">Prompt</a>
-                </div>
-                <div class="event">
-                    <h1 class="name">Intellect</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 2</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">Rules</a>
-                </div>
-                <div class="event">
-                    <h1 class="name">Geekathon</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 1</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">Rules</a>
-                </div>
-                <div class="event">
-                    <h1 class="name">Analogous</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 2</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">Rules</a>
-                </div>
-                <div class="event">
-                    <h1 class="name">Deprehendo</h1>
-                    <p class="brief">Description here</p>
-                    <p class="specs">Teams per School: 1</p>
-                    <p class="specs">Members per Team: 2</p>
-                    <p class="specs">Eligibility: IX to XII</p>
-                    <a href="" class="button">Rules</a>
+
+                <h1 class="heading">Online Events</h1>
+                <div class="row online">
+                    <div class="event">
+                        <h1 class="name">Chorus</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: ∞</p>
+                        <p class="specs">Members per Team: 1</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Prompt</a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">codenode</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: ∞</p>
+                        <p class="specs">Members per Team: 1</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Link</a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">ScriptRoyale</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Prompt</a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">mSway</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Eligibility: IX</p>
+                        <a target="_blank" class="button">Prompt</a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">InFocus</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Prompt</a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">Config[x]</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: ∞</p>
+                        <p class="specs">Members per Team: 1</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">Prompt</a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">decodenode</h1>
+                        <p class="brief">Description here</p>
+                        <p class="specs">Teams per School: ∞</p>
+                        <p class="specs">Members per Team: 1</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button lock">
+                            Link
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -183,6 +194,19 @@ export default {
         this.$emit('emit-footer-color', this.footerColor);
 
         window.addEventListener('scroll', this.onscrollHandler);
+
+        //timer related code
+        document.querySelectorAll('.countdown').forEach((el) => {
+            const finalDate = new Date(el.getAttribute('data-end-date') + " 20:21:00").getTime();
+            let now = new Date().getTime();
+
+            if(finalDate - now > 0){
+                this.timer(el, finalDate);
+            }else{
+                el.parentElement.classList.remove('lock');
+                el.parentNode.removeChild(el);
+            }
+        });
     },
     methods:{
         onscrollHandler: function(){
@@ -194,32 +218,23 @@ export default {
                 this.$emit('emit-nav-color', this.navColor);
             }
         },
-        timer: function(){
-            // Set the date we're counting down to
-            let countDownDate = new Date("July 10, 2020 00:00:00").getTime();
-
-            // Update the count down every 1 second
+        timer: function(e, f){
             let x = setInterval(function() {
-                // Get todays date and time
-                let now = new Date().getTime();
-
-                // Find the time between now and the count down date
-                let diff = countDownDate - now;
-
-                // Time calculations for days, hours, minutes and seconds
+                let i = new Date().getTime();
+                let diff = f - i;
+                
                 let days = Math.floor(diff / (1000 * 60 * 60 * 24));
                 let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
                 let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                e.innerHTML = days + " : " + hours + " : " + minutes + " : " + seconds;
 
-                // Display the result in the element with id="demo"
-                document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
-
-                // If the count down is finished, write some text 
+                //code for after the coutndown stops
                 if (diff <= 0) {
                     clearInterval(x);
-                    document.getElementById("timer").innerHTML = "EXPIRED";
+                    e.parentElement.classList.remove('lock');
+                    e.parentNode.removeChild(e);
                 }
             }, 1000);
         }

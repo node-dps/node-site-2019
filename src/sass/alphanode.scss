@@ -108,7 +108,7 @@ h1.heading{
     }
 
     dd{
-        padding: 0 60px;
+        padding: 0 0 0 60px;
         margin: 0 0 20px 0;
         line-height: 1.5;
     }
@@ -120,6 +120,16 @@ h1.heading{
     position: relative;
     padding: 60px 8%;
     background-color: $blue-3;
+
+    @include below-special-point-3{
+        padding: 60px 0;
+
+        div.event-container div.event{
+            width: 100vw;
+            margin: 10px 0;
+            border-radius: 0;
+        }
+    }
 
     &::before{
         content: '';
@@ -145,21 +155,42 @@ h1.heading{
     }
 
     .heading{
-        margin: 50px 0;
+        margin: 50px 8%;
+        font-size: 1.8rem;
     }
 
-    .event-container{
+
+    .event-container .row{
         display: flex;
-        width: 100%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 85%;
         height: auto;
         padding: 0 0 50px 0;
         justify-content: center;
         align-items: flex-start;
         flex-wrap: wrap;
+        overflow-x: auto;
+
+        @include below-special-point-4{
+            left: 0;
+            transform: translate(0,0);
+            width: 100%;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+
+            div.event{
+                flex: 0 0 auto;
+                width: 89%;
+                padding: 30px 40px 40px 40px;
+            }
+        }
 
         .event{
             display: flex;
-            width: 80%;
+            width: 90%;
+            min-width: 243px;
             max-width: 300px;
             height: auto;
             margin: 10px 10px;
@@ -204,32 +235,51 @@ h1.heading{
             .button{
                 display: block;
                 position: relative;
-                padding: 8px 30px;
+                width: 75%;
+                min-width: 123px;
+                padding: 8px 20px;
                 margin: 20px 0 0 0;
                 border-radius: 8px;
                 color: $blue-1;
                 font-family: montserrat;
+                text-align: center;
                 border: 1px solid $blue-1;
                 transition: all 0.2s;
-                overflow: hidden;
+                cursor: pointer;
 
-                &:hover{
+                &:not([class*='lock']):hover{
                     color: $text-light;
                     background-color: $blue-5;
                     border-color: $blue-5;
+
+                    &.lock::before{
+                        filter: brightness(0) invert(1);
+                    }
                 }
 
-            }
-            .tickcounter{
-                display: block;
-                position: relative;
-                top: 0;
-                left: 0;
-                width: 100px;
-                height: 25px;
-                padding: 0 10px;
-                background-color: $blue-1;
-                border-radius: 0 0 8px 8px;
+                &.lock::before{
+                    content: url('../assets/icons/lock.png');
+                    display: inline-block;
+                    position: relative;
+                    top: 1px;
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .countdown{
+                    display: block;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    width: 90%;
+                    padding: 5px 10px 8px 10px;
+                    font-size: 0.9em;
+                    color: $text-light;
+                    background-color: $blue-1;
+                    border-radius: 0 0 8px 8px;
+                    pointer-events: none;
+                }
             }
         }
     }
