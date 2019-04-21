@@ -1,24 +1,8 @@
-PHASE-1 (Creating the basic site)
-Homepage
-	landing
-		alphanode banner
-			the logo
-			sponsor logos
-			some brief text
-		big graphic for flexing(that @shubhroGupta will make idk what)
-	about node section
-	numbers indicating growth over the years
-
-Members
-	Add Member cards
-Alumni
-	Add Alumni cards
-Achievements
-	Add a list of achievements
+PHASE-1 (Staging)
+    * decouple 404.html
 
 PHASE-2 (Creating a registration interface)
----TO BE DECIDED---
-Leave your suggestions here on how to proceed with this
 
 PHASE-3 (Upgrading the site) {for later}
-    shift to webpack eventually
+    * shift to webpack eventually
+    * proper lazyload implementation

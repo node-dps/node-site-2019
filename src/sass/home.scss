@@ -33,12 +33,14 @@
             margin: 0 auto;
 
             @include below-desktop{
-                width: 480px;
+                width: 90%;
+                max-width: 480px;
             }
 
             @include below-tablet{
                 margin-top: 30px;
-                width: 370px;
+                width: 100%;
+                max-width: 370px;
             }
         }
 
