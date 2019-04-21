@@ -6,7 +6,7 @@ footer.light{
     background-color: $text-light;
     color: $text-dark;
 
-    p.contact a{
+    .contact-details p.contact a{
         color: $text-accent-2;
         &:hover{
             color: $text-light;
@@ -23,7 +23,9 @@ footer.light{
         }
     }
 }
+
 footer{
+    //default => dark
     display: flex;
     position: relative;
     width: 100%;
@@ -37,134 +39,9 @@ footer{
     color: $text-light;
     background-color: $blue-5;
 
-    
-    //post styling just-for-alignment css
-    p.made-with-love{
-        width: 100%;
-        margin: 0 0 30px 0;
-        padding: 10px 0;
-        text-align: center;
-    }
-    
-    p.contact{
-        padding: 0 0px 15px 0;
-        a{
-            margin: 3px 0;
-            padding: 5px 5px;
-            font-size: 0.9em;
-            color: $text-accent-2;
-            border-radius: 100px;
-            transition: all 0.2s;
-            
-            &:hover{
-                background-color: $text-light;
-            }
-        }
-    }
-
-    .content{
-        display: flex;
-        width: 100%;
-        padding: 0 20px;
-        justify-content: center;
-        align-items: center;
-
-        .information{
-            display: flex;
-            width: 375px;
-            padding: 0;
-            margin-right: 40px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-
-            p.intro{
-                width: 100%;
-                margin: 0 10px;
-                font-size: 0.8rem;
-                text-align: right;
-            }
-
-            .contact-details{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-    }
-
-    #gmap{
-        display: block;
-        position: relative;
-        width: $gmap-width;
-        height: $gmap-height;
-        border-radius: 5px;
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    }
-
-    @include below-desktop{
+    @include below-special-point-2{
         padding: 40px 0;
-
-        .content{
-            flex-direction: column-reverse;
-            padding: 0;
-
-            #gmap{
-                height: 190px;
-                max-width: $gmap-width;
-                width: 80%;
-            }
-
-            .information{
-                width: 100%;
-                margin: 50px 0 0 0;
-                flex-direction: row;
-                align-items: stretch;
-
-                p.intro{
-                    width: auto;
-                    text-align: right;
-                    margin: 0 20px;
-                }
-                .contact-details{
-
-                    .contact{
-                        margin: 0 0 10px 0;
-                        padding: 0px 0;
-                    }
-                    .links{
-                        justify-content: flex-start;
-                    }
-                }
-            }
-        }
     }
-
-    @include below-special-point{
-        .content{
-            flex-direction: column-reverse;
-
-            .information{
-                flex-direction: column;
-                
-                p.intro{
-                    text-align: center;
-                }
-                
-                .contact-details{
-                    .contact{
-                        margin: 20px 0;
-                    }
-                    .links{
-                        justify-content: center;
-                    }
-                }
-            }
-        }
-    }
-    // --END--
-    
 
     .heart{
         position: relative;
@@ -173,68 +50,185 @@ footer{
         margin: 0 3px;
     }
 
-    .links{
-        display: flex;
+    .content{
+        display: grid;
         width: 100%;
-        height: $footer-icon-size;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 0px 5px;
+        grid-template-columns: 50% auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "text map"
+            "links map"
+        ;
 
-        .link{
-            display: flex;
-            position: relative;
-            width: $footer-icon-size;
-            height: $footer-icon-size;
-            margin: 0;
-            justify-content: flex-start;
+        @include below-desktop{
+            grid-template-columns: 50% auto;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+                "map map"
+                "text links"
+            ;
+        }
+
+        @include below-special-point-2{
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+                "text"
+                "map"
+                "links"
+            ;
+        }
+    }
+}
+
+//content block
+.content{
+    p.intro{
+        grid-area: text;
+        text-align: right;
+        margin: 20px 10px 0 0;
+        font-size: 0.9em;
+
+        @include below-desktop{
+            margin: 20px 10px 20px 0;
+        }
+
+        @include below-special-point-2{
+            text-align: center;
+            margin: 20px 0;
+        }
+    }
+
+    .contact-details{
+        grid-area: links;
+        display: flex;
+        margin: 0 10px 20px 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        @include below-desktop{
+            align-items: flex-start;
+            margin: 20px 0 0 10px;
+        }
+
+        @include below-special-point-2{
+            justify-content: center;
             align-items: center;
+            margin: 20px 0;
+        }
 
-            & + .link{
-                margin-left: 10px;
-            }
+        p.contact{
+            margin: 0 0 10px 0;
 
-            .name{
-                display: block;
-                position: absolute;
-                top: -2.6rem;
-                left: 50%;
-                transform: translate(-50%, 10px);
-                padding: 0 10px;
-                font-size: 0.8rem;
-                line-height: 1.8;
-                color: $text-dark;
-                background-color: $text-light;
-                border-radius: 5px;
+            a{
+                padding: 5px 8px;
+                font-size: 0.9em;
+                color: $text-accent-2;
+                border-radius: 100px;
                 transition: all 0.2s;
-                box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-                pointer-events: none;
-                opacity: 0;
-
-                &::after{
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    top: 100%;
-                    left: 50%;
-                    transform: translate(-50%, 0);
-                    width: 0;
-                    height: 0;
-                    border: 6px solid transparent;
-                    border-top-color: $text-light;
+                
+                &:hover{
+                    background-color: $text-light;
                 }
             }
-            &:hover .name{
-                transform: translate(-50%, 0);
-                opacity: 1;
+        }
+
+        .links{
+            justify-content: flex-end;
+
+            @include below-desktop{
+                justify-content: flex-start;
             }
-            
-            .icon{
+
+            @include below-special-point-2{
+                justify-content: center;
+            }
+        }
+    }
+
+    #gmap{
+        grid-area: map;
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 84%;
+        max-width: $gmap-width;
+        height: $gmap-height;
+        margin: 0 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+
+        @include below-desktop{
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+    }
+}
+
+//social links block
+.links{
+    display: flex;
+    width: 100%;
+    height: $footer-icon-size;
+    align-items: center;
+    padding: 0px 5px;
+
+    .link{
+        display: flex;
+        position: relative;
+        width: $footer-icon-size;
+        height: $footer-icon-size;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: center;
+
+        & + .link{
+            margin-left: 10px;
+        }
+
+        .name{
+            display: block;
+            position: absolute;
+            top: -2.6rem;
+            left: 50%;
+            transform: translate(-50%, 10px);
+            padding: 0 10px;
+            font-size: 0.8rem;
+            line-height: 1.8;
+            color: $text-dark;
+            background-color: $text-light;
+            border-radius: 5px;
+            transition: all 0.2s;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+            pointer-events: none;
+            opacity: 0;
+
+            &::after{
+                content: '';
                 display: block;
-                width: 100%;
-                height: 100%;
-                border-radius: 100%;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, 0);
+                width: 0;
+                height: 0;
+                border: 6px solid transparent;
+                border-top-color: $text-light;
             }
+        }
+        &:hover .name{
+            transform: translate(-50%, 0);
+            opacity: 1;
+        }
+        
+        .icon{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
         }
     }
 }

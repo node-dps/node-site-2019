@@ -22,27 +22,25 @@
         <footer v-if="showFooter" v-bind:class="footerColor">
             <p class="made-with-love">Made with <img src="./assets/icons/heart.svg" class="heart"> by <span class="green">Node</span></p>
             <div class="content">
-                <div class="information">
-                    <p class="intro">Network of Digital Enthusiasts<br><br>Delhi Public School<br>Site No. 1, Urban Estate<br>Sector-45, Gurgaon</p>
-                    <div class="contact-details">
-                        <p class="contact"><a href="mailto:node.dps.ggn@gmail.com">node.dps.ggn@gmail.com</a></p>
-                        <div class="links">
-                            <a class="link" href="https://www.behance.net/nodedps" target="_blank">
-                                <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/behance-light.png">
-                                <img class="icon" v-else src="./assets/icons/behance.png">
-                                <p class="name">Behance</p>
-                            </a>
-                            <a class="link" href="https://twitter.com/decode_node" target="_blank">
-                                <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/twitter-light.png">
-                                <img class="icon" v-else src="./assets/icons/twitter.png">
-                                <p class="name">Twitter</p>
-                            </a>
-                            <a class="link" href="https://www.facebook.com/node.dps/" target="_blank">
-                                <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/facebook-light.png">
-                                <img class="icon" v-else src="./assets/icons/facebook.png">
-                                <p class="name">Facebook</p>
-                            </a>
-                        </div>
+                <p class="intro">Network of Digital Enthusiasts<br><br>Delhi Public School<br>Site No. 1, Urban Estate<br>Sector-45, Gurgaon</p>
+                <div class="contact-details">
+                    <p class="contact"><a href="mailto:node.dps.ggn@gmail.com">node.dps.ggn@gmail.com</a></p>
+                    <div class="links">
+                        <a class="link" href="https://www.behance.net/nodedps" target="_blank">
+                            <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/behance-light.png">
+                            <img class="icon" v-else src="./assets/icons/behance.png">
+                            <p class="name">Behance</p>
+                        </a>
+                        <a class="link" href="https://twitter.com/decode_node" target="_blank">
+                            <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/twitter-light.png">
+                            <img class="icon" v-else src="./assets/icons/twitter.png">
+                            <p class="name">Twitter</p>
+                        </a>
+                        <a class="link" href="https://www.facebook.com/node.dps/" target="_blank">
+                            <img class="icon" v-if="footerColor == 'dark'" src="./assets/icons/facebook-light.png">
+                            <img class="icon" v-else src="./assets/icons/facebook.png">
+                            <p class="name">Facebook</p>
+                        </a>
                     </div>
                 </div>
                 <div id="gmap"></div>
