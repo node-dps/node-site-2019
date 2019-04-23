@@ -7,16 +7,6 @@ import ErrorPage from './components/ErrorPage.vue'
 
 export default [
     {
-        path: '*',
-        name: 'error',
-        component: ErrorPage
-    },
-    {
-        path: '/',
-        name: 'home',
-        component: Home
-    },
-    {
         path: '/alphanode',
         name: 'alphanode',
         component: Alphanode
@@ -36,4 +26,14 @@ export default [
         name: 'achievements',
         component: Achievements
     },
-]
+    {
+        path: '/',
+        name: 'home',
+        component: Home
+    },
+	{
+		path: '*',
+		name: 'error',
+		component: ErrorPage
+	},
+];
