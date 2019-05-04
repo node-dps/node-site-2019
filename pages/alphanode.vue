@@ -1,5 +1,7 @@
 <template>
     <div id="view_container">
+        <navbarComponent v-bind:color="navColor"/>
+
         <section class="landing first">
             <div class="alphanode">
                 <h1 class="main">Alpha<span class="green">node</span></h1>
@@ -162,27 +164,46 @@
             <h1 class="heading">Sponsors</h1>
             <div class="logo-container">
                 <a href="" class="logo" title="">
-                    <img src="../assets/icons/sponsor-blank.png">
+                    <img src="~/assets/images/icons/sponsor-blank.png">
                 </a>
                 <a href="" class="logo" title="">
-                    <img src="../assets/icons/sponsor-blank.png">
+                    <img src="~/assets/images/icons/sponsor-blank.png">
                 </a>
                 <a href="" class="logo" title="">
-                    <img src="../assets/icons/sponsor-blank.png">
+                    <img src="~/assets/images/icons/sponsor-blank.png">
                 </a>
                 <a href="" class="logo" title="">
-                    <img src="../assets/icons/sponsor-blank.png">
+                    <img src="~/assets/images/icons/sponsor-blank.png">
                 </a>
                 <a href="" class="logo" title="">
-                    <img src="../assets/icons/sponsor-blank.png">
+                    <img src="~/assets/images/icons/sponsor-blank.png">
                 </a>
             </div>
         </section>
+
+        <footerComponent v-bind:color="footerColor" />
     </div>
 </template>
 <script>
+import navbarComponent from '~/components/navbar';
+import footerComponent from '~/components/footer';
+
 export default {
     name: 'alphanode',
+    head(){
+        return {
+            title: 'Alphanode',
+            meta: [{
+                hid: 'Alphanode',
+                name: 'Alphanode',
+                content: 'Alphanode, Annual Tech Symposium Conducted By Node'
+            }]
+        }
+    },
+    components: {
+        navbarComponent,
+        footerComponent
+    },
     data: function(){
         return{
             navColor: 'transparent-light',
@@ -190,9 +211,6 @@ export default {
         }
     },
     mounted() {
-        this.$emit('emit-nav-color', this.navColor);
-        this.$emit('emit-footer-color', this.footerColor);
-
         window.addEventListener('scroll', this.onscrollHandler);
 
         //timer related code
@@ -208,14 +226,15 @@ export default {
             }
         });
     },
+    destroyed(){
+        window.removeEventListener('scroll', this.onscrollHandler);
+    },
     methods:{
         onscrollHandler: function(){
             if(window.scrollY != 0){
                 this.navColor = 'light';
-                this.$emit('emit-nav-color', this.navColor);
             }else{
                 this.navColor = 'transparent-light';
-                this.$emit('emit-nav-color', this.navColor);
             }
         },
         timer: function(e, f){
@@ -242,5 +261,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../sass/alphanode';
+@import 'assets/sass/alphanode';
 </style>

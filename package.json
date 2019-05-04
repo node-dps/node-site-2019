@@ -1,53 +1,25 @@
 {
   "name": "node-site",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Official Node Site",
+  "author": "StrixROX",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
-    "jquery": "^3.3.1",
-    "particles.js": "^2.0.0",
-    "vue": "^2.6.6",
-    "vue-router": "^3.0.2"
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
+    "nuxt": "^2.4.0",
+    "sass-loader": "^7.1.0",
+    "vue-particles": "^1.0.9"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.5.0",
-    "@vue/cli-plugin-eslint": "^3.5.0",
-    "@vue/cli-service": "^3.5.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "vue-particles": "^1.0.9",
-    "vue-template-compiler": "^2.5.21"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+    "nodemon": "^1.18.9"
+  }
 }

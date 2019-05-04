@@ -1,8 +1,10 @@
 <template>
     <div id="view_container">
+        <navbarComponent v-bind:color="navColor"/>
+        
         <section class="landing first">
             <div class="graphic">
-                <img src="../assets/bg/circuit-board-isometric-c.jpeg">
+                <img src="~/assets/images/bg/circuit-board-isometric-c.jpeg">
                 <h1> Network of Digital Enthusiasts </h1>
             </div>
             <div class="boxes">
@@ -47,16 +49,35 @@
                 </div>
             </div>
             <h2>[ Stats from Alpha<span class="green">node</span> 2018 ]</h2>-->
-            <img src="../assets/graphs/1.png" class="graph-1">
-            <img src="../assets/graphs/2.1.png" class="graph-2">
-            <img src="../assets/graphs/2.2.png" class="graph-2">
-            <img src="../assets/graphs/2.3.png" class="graph-2">
+            <img src="~/assets/images/graphs/1.png" class="graph-1">
+            <img src="~/assets/images/graphs/2.1.png" class="graph-2">
+            <img src="~/assets/images/graphs/2.2.png" class="graph-2">
+            <img src="~/assets/images/graphs/2.3.png" class="graph-2">
         </section>
+
+        <footerComponent v-bind:color="footerColor" />
     </div>
 </template>
 <script>
+import navbarComponent from '~/components/navbar';
+import footerComponent from '~/components/footer';
+
 export default {
     name: 'home',
+    head(){
+        return {
+            title: 'Node Club',
+            meta: [{
+                hid: 'Homepage',
+                name: 'Homepage',
+                content: 'Node, the technology club of Delhi Public School, Sector 45, Gurgaon'
+            }]
+        }
+    },
+    components: {
+        navbarComponent,
+        footerComponent
+    },
     data: function(){
         return{
             navColor: 'light',
@@ -64,9 +85,6 @@ export default {
         }
     },
     mounted() {
-        this.$emit('emit-nav-color', this.navColor);
-        this.$emit('emit-footer-color', this.footerColor);
-
         setTimeout(() => {
             this.onloadAnims();
         }, 0);
@@ -106,5 +124,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../sass/home';
+@import 'assets/sass/home';
 </style>

@@ -1,5 +1,7 @@
 <template>
     <div id="view_container">
+        <navbarComponent v-bind:color="navColor"/>
+
         <section class="landing first">
             <h1 class="title">Achievements</h1>
             <vue-particles></vue-particles>
@@ -46,11 +48,30 @@
                 </ul>
             </div>
         </section>
+        
+        <footerComponent v-bind:color="footerColor" />
     </div>
 </template>
 <script>
+import navbarComponent from '~/components/navbar';
+import footerComponent from '~/components/footer';
+
 export default {
     name: 'achievements',
+    head(){
+        return {
+            title: 'Node - Achievements',
+            meta: [{
+                hid: 'Achievements',
+                name: 'Achievements',
+                content: 'Achievements Of Node Club'
+            }]
+        }
+    },
+    components: {
+        navbarComponent,
+        footerComponent
+    },
     data: function(){
         return{
             navColor: 'transparent-light',
@@ -58,9 +79,6 @@ export default {
         }
     },
     mounted() {
-        this.$emit('emit-nav-color', this.navColor);
-        this.$emit('emit-footer-color', this.footerColor);
-
         this.onscrollAnims();
         window.addEventListener('scroll', this.onscrollHandler);
     },
@@ -71,15 +89,14 @@ export default {
         onscrollHandler: function(){
             if(window.scrollY != 0){
                 this.navColor = 'light';
-                this.$emit('emit-nav-color', this.navColor);
             }else{
                 this.navColor = 'transparent-light';
-                this.$emit('emit-nav-color', this.navColor);
             }
 
             this.onscrollAnims();
         },
         onscrollAnims: function(){
+            //background-change function
             if(window.innerWidth >= 1025){
                 let scrolledFrac = $(window).scrollTop() / $(window).height();
                 let opacityFunction = Math.min(1, 1.2 - 1.5 * scrolledFrac);
@@ -90,7 +107,7 @@ export default {
                     top: 'calc(50% + ' + parallaxFunction + 'px)'
                 });
                 
-                let currentColor = $('.list_container').css('background-color');
+                let currentColor = $('.landing.first').css('background-color');
                 let colorCode = currentColor.split('(')[1].split(')')[0].split(',');
                 let newColor = 'rgba(' + colorCode[0] + ',' + colorCode[1] + ',' + colorCode[2] + ', ' + opacityFunction + ')';
 
@@ -103,5 +120,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../sass/achievements';
+@import 'assets/sass/achievements';
 </style>

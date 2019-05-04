@@ -1,8 +1,0 @@
-PHASE-1 (Staging)
-    * decouple 404.html
-
-PHASE-2 (Creating a registration interface)
-
-PHASE-3 (Upgrading the site) {for later}
-    * shift to webpack eventually
-    * proper lazyload implementation
