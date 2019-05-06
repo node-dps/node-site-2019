@@ -8,7 +8,7 @@
                 <h3 class="year">2019</h3>
             </div>
             <a href="" class="register-result">Register</a>
-            <vue-particles></vue-particles>
+            <no-ssr><vue-particles></vue-particles></no-ssr>
         </section>
 
         <section class="info">

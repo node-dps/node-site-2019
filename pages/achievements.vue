@@ -4,7 +4,7 @@
 
         <section class="landing first">
             <h1 class="title">Achievements</h1>
-            <vue-particles></vue-particles>
+            <no-ssr><vue-particles></vue-particles></no-ssr>
         </section>
         <section class="list_container">
             <div class="list">

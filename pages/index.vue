@@ -8,7 +8,7 @@
                 <h1> Network of Digital Enthusiasts </h1>
             </div>
             <div class="boxes">
-                <vue-particles></vue-particles>
+                <no-ssr><vue-particles></vue-particles></no-ssr>
                 <div class="box-front">
                     <div class="alphanode">
                         <h1>Alpha<span class="green">node</span><sup></sup></h1>

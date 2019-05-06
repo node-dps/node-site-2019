@@ -4,7 +4,7 @@
 
         <section class="landing first">
             <h1 class="title">Team</h1>
-            <vue-particles></vue-particles>
+            <no-ssr><vue-particles></vue-particles></no-ssr>
         </section>
         <section class="members">
             <div class="ppl">
