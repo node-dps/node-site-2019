@@ -23,7 +23,11 @@
                     </a>
                 </div>
             </div>
-            <div id="gmap"></div>
+            <div id="gmap">
+                <iframe width="100%" height="100%" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=dps%2C%20sec-45%2C%20gurgaon&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
         </div>
     </footer>
 </template>
@@ -31,23 +35,7 @@
 <script>
 export default {
     name: 'footerComponent',
-    props: ['color'],
-    head(){
-        return {
-            script:[{
-                src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDINKi18UHFQH1UXWTFlIvnVW_XiJe_xAc&callback=myMap'
-            }]
-        }
-    },
-    created(){
-        function myMap() {
-		const mapProp= {
-			center:new google.maps.LatLng(28.442048,77.064731),
-			zoom:18,
-		};
-		const map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-		}
-    }
+    props: ['color']
 }
 </script>
 

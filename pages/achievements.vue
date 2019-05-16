@@ -13,12 +13,40 @@
                         <div class="year-container">
                             <h1 class="year">2018</h1>
                         </div>
-                        <li class="list-entry">Lorem ipsum, dolor sit amet cong elit. Molestias doloem cumque esse.</li>
-                        <li class="list-entry">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias dolor soluta dolorem cumque esse.</li>
-                        <li class="list-entry">Lorem ipsum, dolor sit ametelit. Molestias dolor soluta dolorem cumque esse.</li>
-                        <li class="list-entry">Lorem ipsum, dolor t consectetur adipisicing elit. Molestias dolor soluta dolorem cumque esse.</li>
+                        <li class="list-entry">
+                            <h2>iON</h2>
+                            <aside>Symposium @ Indraprastha International School, Dwarka</aside>
+                            <p>App Development, 3rd</p>
+                            <p>IdeaTech, 2nd</p>
+                        </li>
+                        <li class="list-entry">
+                            <h2>IT@Cutting Edge</h2>
+                            <aside>Symposium @ Delhi Public School, Noida</aside>
+                            <p>Competitive Programming, 2nd</p>
+                            <p>Group Discussion, 3rd</p>
+                        </li>
+                        <li class="list-entry">
+                            <h2>India Fest</h2>
+                            <aside>Delhi Public School R.K. Puram</aside>
+                            <p>Reality Through the Reel, Runners Up</p>
+                        </li>
+                        <li class="list-entry">
+                            <h2>Ecollosseum</h2>
+                            <aside>DAV Sector-49, Gurgaon</aside>
+                            <p>Quiz, 1st</p>
+                            <p>Gaming, 1st</p>
+                            <p>Group Discussion, 1st</p>
+                            <p>Audio Mixing, 1st</p>
+                            <p>Game Development, Runners Up</p>
+                            <p>Buzz Talk, Runners Up</p>
+                        </li>
+                        <li class="list-entry">
+                            <h2>Learner’s Conclave</h2>
+                            <aside>Lotus Valley International, Gurgaon</aside>
+                            <p>Artificial Intelligence - The Future and Us, Runners Up</p>
+                        </li>
                     </div>
-                    <div class="chunk">
+                    <!-- <div class="chunk">
                         <div class="year-container">
                             <h1 class="year">2017</h1>
                         </div>
@@ -26,25 +54,7 @@
                         <li class="list-entry">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem repudiandae soluta?</li>
                         <li class="list-entry">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem repudiandae soluta?</li>
                         <li class="list-entry">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem repudiandae soluta?</li>
-                    </div>
-                    <div class="chunk">
-                        <div class="year-container">
-                            <h1 class="year">2016</h1>
-                        </div>
-                        <li class="list-entry">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias dolor soluta dolorem cumque esse.</li>
-                        <li class="list-entry">Lorem ipsum, dolor sit amet cong elit. Molestias doloem cumque esse.</li>
-                        <li class="list-entry">Lorem ipsum, dolor t consectetur adipisicing elit. Molestias dolor soluta dolorem cumque esse.</li>
-                        <li class="list-entry">Lorem ipsum, dolor sit ametelit. Molestias dolor soluta dolorem cumque esse.</li>
-                    </div>
-                    <div class="chunk">
-                        <div class="year-container">
-                            <h1 class="year">2015</h1>
-                        </div>
-                        <li class="list-entry">Lorem ipsum, dolor t consectetur adipisicing elit. Molestias dolor soluta dolorem cumque esse.</li>
-                        <li class="list-entry">Lorem ipsum, dolor sit ametelit. Molestias dolor soluta dolorem cumque esse.</li>
-                        <li class="list-entry">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias dolor soluta dolorem cumque esse.</li>
-                        <li class="list-entry">Lorem ipsum, dolor sit amet cong elit. Molestias doloem cumque esse.</li>
-                    </div>
+                    </div> -->
                 </ul>
             </div>
         </section>
