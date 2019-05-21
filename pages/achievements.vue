@@ -6,56 +6,25 @@
             <h1 class="title">Achievements</h1>
             <no-ssr><vue-particles></vue-particles></no-ssr>
         </section>
-        <section class="list_container">
-            <div class="list">
-                <ul>
-                    <div class="chunk">
-                        <div class="year-container">
-                            <h1 class="year">2018</h1>
-                        </div>
-                        <li class="list-entry">
-                            <h2>iON</h2>
-                            <aside>Symposium @ Indraprastha International School, Dwarka</aside>
-                            <p>App Development, 3rd</p>
-                            <p>IdeaTech, 2nd</p>
-                        </li>
-                        <li class="list-entry">
-                            <h2>IT@Cutting Edge</h2>
-                            <aside>Symposium @ Delhi Public School, Noida</aside>
-                            <p>Competitive Programming, 2nd</p>
-                            <p>Group Discussion, 3rd</p>
-                        </li>
-                        <li class="list-entry">
-                            <h2>India Fest</h2>
-                            <aside>Delhi Public School R.K. Puram</aside>
-                            <p>Reality Through the Reel, Runners Up</p>
-                        </li>
-                        <li class="list-entry">
-                            <h2>Ecollosseum</h2>
-                            <aside>DAV Sector-49, Gurgaon</aside>
-                            <p>Quiz, 1st</p>
-                            <p>Gaming, 1st</p>
-                            <p>Group Discussion, 1st</p>
-                            <p>Audio Mixing, 1st</p>
-                            <p>Game Development, Runners Up</p>
-                            <p>Buzz Talk, Runners Up</p>
-                        </li>
-                        <li class="list-entry">
-                            <h2>Learner’s Conclave</h2>
-                            <aside>Lotus Valley International, Gurgaon</aside>
-                            <p>Artificial Intelligence - The Future and Us, Runners Up</p>
-                        </li>
-                    </div>
-                    <!-- <div class="chunk">
-                        <div class="year-container">
-                            <h1 class="year">2017</h1>
-                        </div>
-                        <li class="list-entry">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem repudiandae soluta?</li>
-                        <li class="list-entry">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem repudiandae soluta?</li>
-                        <li class="list-entry">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem repudiandae soluta?</li>
-                        <li class="list-entry">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem repudiandae soluta?</li>
-                    </div> -->
-                </ul>
+    
+        <section class="events_container">
+            <div class="table">
+                <table class="events">
+                    <tr class="head">
+                        <th>Year</th>
+                        <th>Symposium</th>
+                        <th>Host</th>
+                        <th class="center">Awards Won</th>
+                        <!-- <th class="center">Details</th> -->
+                    </tr>
+                    <tr v-for="e in events" :key='e.$index'>
+                        <td>{{ e.year }}</td>
+                        <td>{{ e.name }}</td>
+                        <td>{{ e.host }}</td>
+                        <td class="center">{{ e.awards.length }}</td>
+                        <!-- <td class="center arrow"><p><span>&#x276F;</span></p></td> -->
+                    </tr>
+                </table>
             </div>
         </section>
         
@@ -65,6 +34,8 @@
 <script>
 import navbarComponent from '~/components/navbar';
 import footerComponent from '~/components/footer';
+
+import { achievements } from '~/static/data/events'
 
 export default {
     name: 'achievements',
@@ -85,7 +56,8 @@ export default {
     data: function(){
         return{
             navColor: 'transparent-light',
-            footerColor: 'dark'
+            footerColor: 'dark',
+            events: achievements
         }
     },
     mounted() {
@@ -121,7 +93,7 @@ export default {
                 let colorCode = currentColor.split('(')[1].split(')')[0].split(',');
                 let newColor = 'rgba(' + colorCode[0] + ',' + colorCode[1] + ',' + colorCode[2] + ', ' + opacityFunction + ')';
 
-                $('.list_container, .landing.first').css({
+                $('.events_container, .landing.first').css({
                     backgroundColor: newColor
                 });
             }

@@ -23,37 +23,25 @@
 </template>
 
 <script>
+import { navItems } from '~/static/data/navbar-items'
+
 export default {
     name: 'navbarComponent',
     props: ['color'],
     data: function(){
         return {
             expandNav: false,
-            navbar: [{
-                    name: "Alphanode",
-                    href: "alphanode"
-                },
-                {
-                    name: "Team",
-                    href: "team"
-                },
-                {
-                    name: "Alumni",
-                    href: "alumni"
-                },
-                {
-                    name: "Achievements",
-                    href: "achievements"
-                }
-            ]
+            navbar: navItems
         };
     },
     mounted(){
         $('.navbar').addClass('show');
         
+        window.addEventListener('click', this.bodyLock);
         window.addEventListener('scroll', this.navbarScrollHandler);
     },
     destroyed() {
+        window.removeEventListener('click', this.bodyLock);
         window.removeEventListener('scroll', this.navbarScrollHandler);
     },
     methods: {
@@ -70,6 +58,13 @@ export default {
                 }
             }
             this.scrollPos = window.scrollY;
+        },
+        bodyLock: function(){
+            if(this.expandNav == true){
+                document.documentElement.style.overflowY = 'hidden'
+            }else{
+                document.documentElement.style.overflowY = 'visible'
+            }
         }
     }
 }
