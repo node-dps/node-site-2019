@@ -199,7 +199,7 @@ import navbarComponent from '~/components/navbar';
 import footerComponent from '~/components/footer';
 
 export default {
-    name: 'members',
+    name: 'team',
     head(){
         return {
             title: 'Node - Team',

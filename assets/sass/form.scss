@@ -1,0 +1,117 @@
+@import './_common';
+
+#form_container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 8% 150px 8%;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $blue-1;
+    
+    @include below-special-point{
+        padding: 60px 0;
+    }
+}
+
+#particles-js{
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    pointer-events: none;
+    opacity: 0.5;
+    overflow: hidden
+}
+
+form{
+    display: block;
+    width: 100vw;
+    max-width: 450px;
+    padding: 40px 60px;
+    background-color: $text-light;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    @include below-special-point{
+        max-width: 100vw;
+        border-radius: 0;
+    }
+
+    *{
+        font-family: montserrat;
+        margin: 0;
+    }
+
+    h1{
+        margin: 20px 0 40px 0;
+    }
+
+    fieldset{
+        position: relative;
+        padding: 0;
+        margin: 20px 0;
+        border: none;
+
+        input + .line{
+            display: block;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 0px;
+            height: 2px;
+            background-color: $blue-1;
+            transition: width 0.2s;
+        }
+
+        input:focus + .line{
+            width: 100%;
+        }
+    }
+
+    input{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 40px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: $blue-3;
+        transition: background-color 0.2s;
+
+        &:focus{
+            background-color: $text-light;
+        }
+    }
+
+    button[type='submit']{
+        display: block;
+        padding: 10px 20px;
+        margin: 10px 0 0 auto;
+        border: none;
+        color: $text-light;
+        background-color: $blue-1;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+        transition: all 0.2s;
+
+        &:hover{
+            box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+            background-color: $blue-5;
+        }
+    }
+
+    a.aside{
+        padding: 10px 10px;
+        color: $blue-5;
+        font-size: 0.9em;
+        
+        &:hover{
+            text-decoration: underline;
+            color: $blue-1;
+        }
+    }
+}
