@@ -19,7 +19,17 @@
 <script>
 export default {
     name: 'errorPage',
-    props: ['error']
+    props: ['error'],
+    head(){
+        return {
+            title: 'Error!',
+            meta: [{
+                hid: 'Error',
+                name: 'Error',
+                content: 'Something went wrong.'
+            }]
+        }
+    },
 }
 </script>
 <style lang="sass" scoped>
