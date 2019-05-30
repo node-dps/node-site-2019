@@ -1,8 +1,10 @@
 <template>
     <div id="view_container">
         <section class="error first">
-            <h1>404</h1>
-            <h2>Page not found</h2>
+            <h1 v-if="error.statusCode === 404">404</h1>
+            <h1 v-else>Oops!</h1>
+            <h2 v-if="error.statusCode === 404">Page not found</h2>
+            <h2 v-else>An error occurred</h2>
             <img src="~/assets/images/icons/kabootar.png">
             <!--<p>The page you are looking for does not exist.<br>
             <a href="\">Go back</a> or contact our admin at <a href="mailto:node.dps.ggn@gmail.com">node.dps.ggn@gmail.com</a></p>-->
