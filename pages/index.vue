@@ -66,7 +66,7 @@ export default {
     name: 'home',
     head(){
         return {
-            title: 'Node Club',
+            title: 'Home | Node',
             meta: [{
                 hid: 'Homepage',
                 name: 'Homepage',

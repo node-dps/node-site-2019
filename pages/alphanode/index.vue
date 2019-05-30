@@ -1,7 +1,6 @@
 <template>
     <div id="view_container">
         <navbarComponent v-bind:color="navColor"/>
-
         <section class="landing first">
             <div class="alphanode">
                 <h1 class="main">Alpha<span class="green">node</span></h1>
@@ -10,7 +9,6 @@
             <nuxt-link to="/alphanode/register" class="register-result">Register</nuxt-link>
             <no-ssr><vue-particles></vue-particles></no-ssr>
         </section>
-
         <section class="info">
             <h1 class="heading">What is new?</h1>
             <p>In its 5th iteration since its inception, Alphanode 2019 is poised to be drastically bigger and better than it has ever been
@@ -36,62 +34,87 @@
                 <div class="row onsite">
                     <div class="event">
                         <h1 class="name">Create[x]</h1>
-                        <p class="brief">Description here</p>
+                        <p class="brief">Hackathon</p>
+                        <p class="tagline">Innovate to create.</p>
                         <p class="specs">Teams per School: 1</p>
                         <p class="specs">Members per Team: 4</p>
                         <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button lock">
+                        <a target="_blank" class="button">
                             Prompt
                             <div class="countdown" data-end-date="July 10, 2019"></div>
                         </a>
                     </div>
                     <div class="event">
                         <h1 class="name">RoboCTRL</h1>
-                        <p class="brief">Description here</p>
+                        <p class="brief">Autonomous Robotics</p>
+                        <p class="tagline">May the bot be with you.</p>
                         <p class="specs">Teams per School: 1</p>
                         <p class="specs">Members per Team: 3</p>
                         <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Prompt</a>
-                    </div>
-                    <div class="event">
-                        <h1 class="name">Analogous</h1>
-                        <p class="brief">Description here</p>
-                        <p class="specs">Teams per School: 1</p>
-                        <p class="specs">Members per Team: 2</p>
-                        <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Rules</a>
-                    </div>
-                    <div class="event">
-                        <h1 class="name">Deprehendo</h1>
-                        <p class="brief">Description here</p>
-                        <p class="specs">Teams per School: 1</p>
-                        <p class="specs">Members per Team: 2</p>
-                        <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Rules</a>
-                    </div>
-                    <div class="event">
-                        <h1 class="name">Geekathon</h1>
-                        <p class="brief">Description here</p>
-                        <p class="specs">Teams per School: 1</p>
-                        <p class="specs">Members per Team: 1</p>
-                        <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Rules</a>
-                    </div>
-                    <div class="event">
-                        <h1 class="name">Intellect</h1>
-                        <p class="brief">Description here</p>
-                        <p class="specs">Teams per School: 1</p>
-                        <p class="specs">Members per Team: 2</p>
-                        <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Rules</a>
+                        <a target="_blank" class="button">
+                            Prompt
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
                     </div>
                     <div class="event">
                         <h1 class="name">PhotoBuild</h1>
-                        <p class="brief">Description here</p>
+                        <p class="brief">Photography</p>
+                        <p class="tagline">Capture life.</p>
                         <p class="specs">Teams per School: 1</p>
                         <p class="specs">Members per Team: 2</p>
                         <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Prompt</a>
+                        <a target="_blank" class="button">
+                            Prompt
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">Analogous</h1>
+                        <p class="brief">Gaming</p>
+                        <p class="tagline">Press [X] to continue.</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">
+                            Rules
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">Deprehendo</h1>
+                        <p class="brief">Surprise</p>
+                        <p class="tagline">Expect anything to everything.</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">
+                            Rules
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">Intellect</h1>
+                        <p class="brief">Senior Quiz</p>
+                        <p class="tagline">Question to perfection.</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 2</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">
+                            Rules
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">Geekathon</h1>
+                        <p class="brief">Group Discussion</p>
+                        <p class="tagline">Improve your argument to win.</p>
+                        <p class="specs">Teams per School: 1</p>
+                        <p class="specs">Members per Team: 1</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">
+                            Rules
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
                     </div>
                 </div>
 
@@ -99,62 +122,87 @@
                 <div class="row online">
                     <div class="event">
                         <h1 class="name">decodenode</h1>
-                        <p class="brief">Description here</p>
+                        <p class="brief">Cryptic Hunt</p>
+                        <p class="tagline">The quest to be the best.</p>
                         <p class="specs">Teams per School: ∞</p>
                         <p class="specs">Members per Team: 1</p>
                         <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button lock">
+                        <a target="_blank" class="button">
+                            Link
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
+                    </div>
+                    <div class="event">
+                        <h1 class="name">codenode</h1>
+                        <p class="brief">Competitive Programming</p>
+                        <p class="tagline">#include &lt;logic.h&gt;</p>
+                        <p class="specs">Teams per School: ∞</p>
+                        <p class="specs">Members per Team: 1</p>
+                        <p class="specs">Eligibility: IX to XII</p>
+                        <a target="_blank" class="button">
                             Link
                             <div class="countdown" data-end-date="July 10, 2019"></div>
                         </a>
                     </div>
                     <div class="event">
                         <h1 class="name">ScriptRoyale</h1>
-                        <p class="brief">Description here</p>
+                        <p class="brief">Challenge Programming</p>
+                        <p class="tagline">Winner winner compile dinner.</p>
                         <p class="specs">Teams per School: 1</p>
                         <p class="specs">Members per Team: 2</p>
                         <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Prompt</a>
-                    </div>
-                    <div class="event">
-                        <h1 class="name">codenode</h1>
-                        <p class="brief">Description here</p>
-                        <p class="specs">Teams per School: ∞</p>
-                        <p class="specs">Members per Team: 1</p>
-                        <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Link</a>
+                        <a target="_blank" class="button">
+                            Prompt
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
                     </div>
                     <div class="event">
                         <h1 class="name">Chorus</h1>
-                        <p class="brief">Description here</p>
+                        <p class="brief">Audio Mixing</p>
+                        <p class="tagline">Muse to amuse.</p>
                         <p class="specs">Teams per School: ∞</p>
                         <p class="specs">Members per Team: 1</p>
                         <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Prompt</a>
+                        <a target="_blank" class="button">
+                            Prompt
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
                     </div>
                     <div class="event">
                         <h1 class="name">InFocus</h1>
-                        <p class="brief">Description here</p>
+                        <p class="brief">Moviemaking</p>
+                        <p class="tagline">Spoiler alert!</p>
                         <p class="specs">Teams per School: 1</p>
                         <p class="specs">Members per Team: 2</p>
                         <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Prompt</a>
+                        <a target="_blank" class="button">
+                            Prompt
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
                     </div>
                     <div class="event">
                         <h1 class="name">Config[x]</h1>
-                        <p class="brief">Description here</p>
+                        <p class="brief">Hardware</p>
+                        <p class="tagline">Enthusiasts assemble!</p>
                         <p class="specs">Teams per School: ∞</p>
                         <p class="specs">Members per Team: 1</p>
                         <p class="specs">Eligibility: IX to XII</p>
-                        <a target="_blank" class="button">Prompt</a>
+                        <a target="_blank" class="button">
+                            Prompt
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
                     </div>
                     <div class="event">
                         <h1 class="name">mSway</h1>
-                        <p class="brief">Description here</p>
+                        <p class="brief">Online Powerpoint</p>
+                        <p class="tagline">Presentation is key.</p>
                         <p class="specs">Teams per School: 1</p>
                         <p class="specs">Members per Team: 2</p>
                         <p class="specs">Eligibility: IX</p>
-                        <a target="_blank" class="button">Prompt</a>
+                        <a target="_blank" class="button">
+                            Prompt
+                            <div class="countdown" data-end-date="July 10, 2019"></div>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@ export var achievements = [
     {
         year: 2018,
         name: 'nCrypt',
-        host: 'Delhi Public School Suhant Lok, Gurgaon',
+        host: 'Delhi Public School Sushant Lok, Gurgaon',
         awards: [
             { event: 'Quiz', position: '1st' },
             { event: 'Gaming', position: '1st'},

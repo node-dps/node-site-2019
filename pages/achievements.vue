@@ -41,7 +41,7 @@ export default {
     name: 'achievements',
     head(){
         return {
-            title: 'Node - Achievements',
+            title: 'Achievements | Node',
             meta: [{
                 hid: 'Achievements',
                 name: 'Achievements',

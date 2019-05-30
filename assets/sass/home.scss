@@ -149,10 +149,11 @@
 
     }
 
+
     .scroll-icon{
         display: block;
         position: absolute;
-        top: calc(100vh - 150px);
+        top: calc(100vh - 80px);
         left: 50%;
         transform: translate(-50%, 0);
         box-sizing: content-box;
@@ -161,9 +162,12 @@
         border: 4px solid #495ACF;
         border-radius: 120px;
         opacity: 0;
-        
         transition: opacity 0.5s ease;
 
+        @include below-desktop{
+            top: calc(100vh - 150px);
+        }
+        
         .wheel{
             display: block;
             position: relative;

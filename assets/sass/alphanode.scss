@@ -5,14 +5,13 @@ div#view_container{
 }
 
 #particles-js{
-    position: fixed;
     top: 0;
     left: 0;
 }
 
 .landing.first{
     display: flex;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
     align-items: center;
     font-weight: normal;
@@ -124,7 +123,7 @@ h1.heading{
 .events{
     display: block;
     position: relative;
-    padding: 60px 8%;
+    padding: 60px 4.6%;
     background-color: $blue-3;
 
     @include below-special-point-3{
@@ -196,13 +195,13 @@ h1.heading{
         .event{
             display: flex;
             width: 90%;
-            min-width: 243px;
-            max-width: 300px;
-            height: auto;
+            min-width: 250px;
+            max-width: 305px;
+            height: 350px;
             margin: 10px 10px;
             padding: 30px 50px 40px 50px;
             flex-direction: column;
-            justify-content: center;
+            //justify-content: center; //TO UNCOMMENT WHEN PROMPTS RELEASED
             align-items: center;
             background-color: $blue-4;
             border-radius: 10px;
@@ -224,11 +223,18 @@ h1.heading{
             }
             
             .brief{
-                margin: 10px 0 20px 0;
+                margin: 10px 0 5px 0;
                 text-align: left;
-                font-size: 0.95rem;
+                font-size: 1rem;
                 letter-spacing: 0;
                 width: 100%;
+            }
+
+            .tagline {
+                width: 100%;
+                text-align: left;
+                margin: 0 0 20px 0;
+                font-size: 0.82rem;
             }
 
             .specs{

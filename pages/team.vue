@@ -81,7 +81,7 @@
                             </div>
                         </div>
                     </div>
-                <div class="member">
+                    <div class="member">
                         <div class="dp"><img src="~/assets/images/members/pratyush-kumar.jpeg"></div>
                         <h1 class="name">Pratyush Kumar</h1>
                         <h2 class="desig">Create[x]</h2>
@@ -89,20 +89,6 @@
                             <div class="links">
                                 <a href="https://github.com/StrixRox" class="link" target="_blank"><img src="~/assets/images/icons/github.png"></a>
                                 <a href="https://www.instagram.com/strix_rox/" class="link" target="_blank"><img src="~/assets/images/icons/instagram.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="member">
-                        <div class="dp"><img src="~/assets/images/members/jainil-ajmera.jpeg"></div>
-                        <h1 class="name">Jainil Ajmera</h1>
-                        <h2 class="desig"><span style="text-transform: none; font-family: inherit">decodenode</span>, Deprehendo</h2>
-                        <div class="container">
-                            <div class="links">
-                                <a href="https://jainilajmera.github.io" class="link" target="_blank"><img src="~/assets/images/icons/website.png"></a>
-                                <a href="https://bit.ly/jainilyoutube" class="link" target="_blank"><img src="~/assets/images/icons/youtube.png"></a>
-                                <a href="https://www.instagram.com/jainilajmera/" class="link" target="_blank"><img src="~/assets/images/icons/instagram.png"></a>
                             </div>
                         </div>
                     </div>
@@ -118,8 +104,34 @@
                         </div>
                     </div>
                 </div>
+                <!--<div class="row">
+                    <div class="member">
+                        <div class="dp"><img src="~/assets/images/members/jainil-ajmera.jpeg"></div>
+                        <h1 class="name">Jainil Ajmera</h1>
+                        <h2 class="desig"><span style="text-transform: none; font-family: inherit">decodenode</span>, Deprehendo</h2>
+                        <div class="container">
+                            <div class="links">
+                                <a href="https://jainilajmera.github.io" class="link" target="_blank"><img src="~/assets/images/icons/website.png"></a>
+                                <a href="https://bit.ly/jainilyoutube" class="link" target="_blank"><img src="~/assets/images/icons/youtube.png"></a>
+                                <a href="https://www.instagram.com/jainilajmera/" class="link" target="_blank"><img src="~/assets/images/icons/instagram.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
                 <div class="importance">Members</div>
                 <div class="row">
+                    <div class="member">
+                        <div class="dp"><img src="~/assets/images/members/jainil-ajmera.jpeg"></div>
+                        <h1 class="name">Jainil Ajmera</h1>
+                        <h2 class="desig"><span style="text-transform: none; font-family: inherit">decodenode</span>, Deprehendo</h2>
+                        <div class="container">
+                            <div class="links">
+                                <a href="https://jainilajmera.github.io" class="link" target="_blank"><img src="~/assets/images/icons/website.png"></a>
+                                <a href="https://bit.ly/jainilyoutube" class="link" target="_blank"><img src="~/assets/images/icons/youtube.png"></a>
+                                <a href="https://www.instagram.com/jainilajmera/" class="link" target="_blank"><img src="~/assets/images/icons/instagram.png"></a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="member">
                         <div class="dp"><img src="~/assets/images/members/dev-malik.png"></div>
                         <h1 class="name">Dev Malik</h1>
@@ -166,7 +178,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="member">
+                    <!--<div class="member">
                         <div class="dp"><img src="~/assets/images/members/garvdeep-singh.jpeg"></div>
                         <h1 class="name">Garvdeep Singh</h1>
                         <h2 class="desig">mSway</h2>
@@ -176,7 +188,7 @@
                                 <a href="https://www.instagram.com/garvdeep.singh" class="link" target="_blank"><img src="~/assets/images/icons/instagram.png"></a>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="member">
                         <div class="dp"><img src="~/assets/images/members/surabhi-mishra.jpeg"></div>
                         <h1 class="name">Surabhi Mishra</h1>
@@ -202,7 +214,7 @@ export default {
     name: 'team',
     head(){
         return {
-            title: 'Node - Team',
+            title: 'Team | Node',
             meta: [{
                 hid: 'Team',
                 name: 'Team',

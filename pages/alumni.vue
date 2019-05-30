@@ -242,7 +242,7 @@ export default {
     name: 'alumni',
     head(){
         return {
-            title: 'Node - Alumni',
+            title: 'Alumni | Node',
             meta: [{
                 hid: 'Alumni',
                 name: 'Alumni',
