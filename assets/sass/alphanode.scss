@@ -9,12 +9,6 @@ div#view_container{
     left: 0;
 }
 
-section.first {
-    @include below-desktop {
-        height: 100%;
-    }
-}
-
 .landing.first{
     display: flex;
     justify-content: center;
@@ -22,6 +16,11 @@ section.first {
     font-weight: normal;
     color: $text-light;
     background-color: $blue-1;
+
+    @include below-tablet {
+        align-items: inherit;
+        padding-top: 30vh;
+    }
 
     *{
         margin: 0;
@@ -71,6 +70,10 @@ section.first {
             background-color: $blue-5;
             border-color: $blue-5;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        @include below-tablet {
+            bottom: 30vh;
         }
     }
 }
