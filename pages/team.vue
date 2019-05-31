@@ -81,7 +81,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="member">
+                    <!--<div class="member">
                         <div class="dp"><img src="~/assets/images/members/pratyush-kumar.jpeg"></div>
                         <h1 class="name">Pratyush Kumar</h1>
                         <h2 class="desig">Create[x]</h2>
@@ -91,7 +91,7 @@
                                 <a href="https://www.instagram.com/strix_rox/" class="link" target="_blank"><img src="~/assets/images/icons/instagram.png"></a>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="member">
                         <div class="dp"><img src="~/assets/images/members/param-kapur.jpeg"></div>
                         <h1 class="name">Param Kapur</h1>
@@ -103,8 +103,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--<div class="row">
+                <!--</div>-->
+                <!--<div class="row">-->
                     <div class="member">
                         <div class="dp"><img src="~/assets/images/members/jainil-ajmera.jpeg"></div>
                         <h1 class="name">Jainil Ajmera</h1>
@@ -117,10 +117,10 @@
                             </div>
                         </div>
                     </div>
-                </div>-->
+                </div>
                 <div class="importance">Members</div>
                 <div class="row">
-                    <div class="member">
+                    <!--<div class="member">
                         <div class="dp"><img src="~/assets/images/members/jainil-ajmera.jpeg"></div>
                         <h1 class="name">Jainil Ajmera</h1>
                         <h2 class="desig"><span style="text-transform: none; font-family: inherit">decodenode</span>, Deprehendo</h2>
@@ -131,8 +131,8 @@
                                 <a href="https://www.instagram.com/jainilajmera/" class="link" target="_blank"><img src="~/assets/images/icons/instagram.png"></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="member">
+                    </div>-->
+                    <!--<div class="member">
                         <div class="dp"><img src="~/assets/images/members/dev-malik.png"></div>
                         <h1 class="name">Dev Malik</h1>
                         <h2 class="desig">InFocus</h2>
@@ -141,7 +141,7 @@
                                 <a href="https://www.instagram.com/devmalik09" class="link" target="_blank"><img src="~/assets/images/icons/instagram.png"></a>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="member">
                         <div class="dp"><img src="~/assets/images/members/kavi-chopra.png"></div>
                         <h1 class="name">Kavi Chopra</h1>
@@ -166,7 +166,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="member">
+                    <!--<div class="member">
                         <div class="dp"><img src="~/assets/images/members/jyotirmay-shelly.jpg"></div>
                         <h1 class="name">Jyotirmay Shelly</h1>
                         <h2 class="desig">Chorus</h2>
@@ -177,7 +177,7 @@
                                 <a href="https://www.instagram.com/jyotirmay.shelly" class="link" target="_blank"><img src="~/assets/images/icons/instagram.png"></a>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <!--<div class="member">
                         <div class="dp"><img src="~/assets/images/members/garvdeep-singh.jpeg"></div>
                         <h1 class="name">Garvdeep Singh</h1>

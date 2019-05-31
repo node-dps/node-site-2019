@@ -24,7 +24,7 @@ div#view_container{
 
     *{
         margin: 0;
-        font-family: montserrat;
+        font-family: montserrat, sans-serif;
     }
 
     .alphanode{
@@ -81,7 +81,7 @@ div#view_container{
 h1.heading{
     font-weight: normal;
     font-size: 2rem;
-    font-family: montserrat;
+    font-family: montserrat, sans-serif;
     text-align: center;
 }
 
@@ -111,7 +111,7 @@ h1.heading{
 
     dt{
         font-size: 1.01rem;
-        font-family: montserrat;
+        font-family: montserrat, sans-serif;
         font-weight: bold;
 
         &::before{
@@ -226,7 +226,7 @@ h1.heading{
                 margin: 10px 0;
                 font-size: 1.5rem;
                 font-weight: normal;
-                font-family: montserrat;
+                font-family: montserrat, sans-serif;
                 text-align: left;
             }
             
@@ -261,7 +261,7 @@ h1.heading{
                 margin: 20px 0 0 0;
                 border-radius: 8px;
                 color: $blue-1;
-                font-family: montserrat;
+                font-family: montserrat, sans-serif;
                 text-align: center;
                 border: 1px solid $blue-1;
                 transition: all 0.2s;

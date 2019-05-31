@@ -125,7 +125,7 @@
         padding: 10%;
         color: $text-light;
         font-size: 0.85rem;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', sans-serif;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -202,7 +202,7 @@
 //styling box-front children
 .box-front{
     color: $text-light;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     
     *{
         font-weight: normal;
@@ -265,7 +265,7 @@
     }
 
     h1{
-        font-family: Montserrat;
+        font-family: Montserrat, sans-serif;
         font-size: 2rem;
         text-align: left;
     }
@@ -289,7 +289,7 @@
     h1{
         margin-bottom: 0;
         font-size: 2em;
-        font-family: montserrat;
+        font-family: montserrat, sans-serif;
         line-height: 1.4;
         text-align: center;
     }

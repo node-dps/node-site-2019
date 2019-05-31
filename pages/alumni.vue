@@ -45,7 +45,7 @@
                     <div class="member alumni">
                         <div class="dp"><img src="~/assets/images/members/akarsh-khanna.png"></div>
                         <h1 class="name">Akarsh Khanna</h1>
-                        <p class="info">Head Boy, Student Council 2018. Subject Matter Expert at Node.</p>
+                        <p class="info">Head Boy, Student Council 2018. Subject Matter Expert at Node.<br><br></p>
                         <div class="container">
                             <div class="links">
                                 <p> Links Unavailable </p>

@@ -1,5 +1,4 @@
 @import '_common';
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans'); //dev
 
 div#view_container{
     padding-top: 0;
@@ -15,7 +14,7 @@ div#view_container{
         margin: 0;
         font-weight: normal;
         text-align: center;
-        font-family: montserrat;
+        font-family: montserrat, sans-serif;
     }
 
     h1{
