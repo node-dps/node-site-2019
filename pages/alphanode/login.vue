@@ -27,14 +27,14 @@
 
 <script>
 export default {
-    name: 'alpha-register',
+    name: 'alpha-login',
     head(){
         return {
             title: 'Login | Alphanode',
             meta: [{
-                hid: 'Alphanode Register',
-                name: 'Alphanode Register',
-                content: 'Register to Participate in Alphanode'
+                hid: 'Alphanode Login',
+                name: 'Alphanode Login',
+                content: 'Login to Participate in Alphanode'
             }]
         }
     },

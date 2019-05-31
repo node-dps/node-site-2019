@@ -13,7 +13,7 @@
                 <div class="line"></div>
             </fieldset>
             <fieldset>
-                <input type="text" name="school-email" placeholder="School's E-mail Address">
+                <input type="email" name="school-email" placeholder="School's E-mail Address">
                 <div class="line"></div>
             </fieldset>
             <fieldset>
