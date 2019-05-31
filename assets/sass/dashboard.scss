@@ -49,6 +49,17 @@ form{
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     z-index: 1;
+    
+    @include below-special-point{
+        max-width: 100vw;
+        border-radius: 0;
+        padding: 40px 20px;
+    }
+
+    *{
+        font-family: montserrat;
+        margin: 0;
+    }
 
     table {
         width: 100%;
@@ -58,6 +69,10 @@ form{
             text-align: center;
             font-size: 1rem;
             padding-bottom: 10px;
+
+            @include below-special-point{
+                font-size: 0.9rem;
+            }
         }
 
         .chosen {
@@ -72,16 +87,6 @@ form{
                 border-bottom-color: $blue-1;
             }
         }
-    }
-    
-    @include below-special-point{
-        max-width: 100vw;
-        border-radius: 0;
-    }
-
-    *{
-        font-family: montserrat;
-        margin: 0;
     }
 
     fieldset{
