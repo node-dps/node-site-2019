@@ -23,9 +23,9 @@
                         and fierce competition with over 500 participants from across Delhi-NCR.</p>
                 </div>
             </div>
-            <div class="scroll-icon">
+            <!--<div class="scroll-icon">
                 <div class="wheel"></div>
-            </div>
+            </div>-->
         </section>
         <section class="about">
             <h1>About Node</h1>

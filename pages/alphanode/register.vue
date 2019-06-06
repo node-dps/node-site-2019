@@ -26,7 +26,7 @@
             </fieldset>
             <br>
             <!--<nuxt-link to="/alphanode/login" class="aside">Already registered?</nuxt-link>-->
-            <button type="submit">Submit</button>
+            <nuxt-link to="/alphanode/login"><button type="submit">Submit</button></nuxt-link>
         </form>
         <nuxt-link to="/alphanode"><button class="go-back">&larr;</button></nuxt-link>
     </div>
