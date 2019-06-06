@@ -3,8 +3,10 @@
         <navbarComponent v-bind:color="navColor"/>
         
         <section class="landing first">
-            <div class="graphic">
-                <img src="~/assets/images/bg/circuit-board-isometric-c.jpeg">
+            <div class="graphic-container">
+                <object type="image/svg+xml" data="~/assets/images/bg/bg.svg" class="graphic">
+                    <img src="~/assets/images/bg/bg.png" class="graphic">
+                </object>
                 <h1> Network of Digital Enthusiasts </h1>
             </div>
             <div class="boxes">

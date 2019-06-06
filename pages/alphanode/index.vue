@@ -6,7 +6,7 @@
                 <h1 class="main">Alpha<span class="green">node</span></h1>
                 <h3 class="year">2019</h3>
             </div>
-            <nuxt-link to="/alphanode/register" class="register-result">Register</nuxt-link>
+            <!--<nuxt-link to="/alphanode/register" class="register-result">Register</nuxt-link>-->
             <no-ssr><vue-particles></vue-particles></no-ssr>
         </section>
         <section class="info">
