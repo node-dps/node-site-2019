@@ -37,7 +37,7 @@
                         <p class="brief">Hackathon</p>
                         <p class="tagline">Innovate to create.</p>
                         <p class="specs">Teams per School: 1</p>
-                        <p class="specs">Members per Team: 4</p>
+                        <p class="specs">Members per Team: 3</p>
                         <p class="specs">Eligibility: IX to XII</p>
                         <a target="_blank" class="button">
                             Prompt
