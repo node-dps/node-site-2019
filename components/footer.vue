@@ -6,6 +6,16 @@
             <div class="contact-details">
                 <p class="contact"><a href="mailto:node.dps.ggn@gmail.com">node.dps.ggn@gmail.com</a></p>
                 <div class="links">
+                    <a class="link" href="https://www.facebook.com/node.dps/" target="_blank">
+                        <img class="icon" v-if="color == 'dark'" src="~/assets/images/icons/facebook-light.png">
+                        <img class="icon" v-else src="~/assets/images/icons/facebook.png">
+                        <p class="name">Facebook</p>
+                    </a>
+                    <a class="link" href="https://www.instagram.com/node.dps/" target="_blank">
+                        <img class="icon" v-if="color == 'dark'" src="~/assets/images/icons/instagram-light.png">
+                        <img class="icon" v-else src="~/assets/images/icons/instagram.png">
+                        <p class="name">Instagram</p>
+                    </a>
                     <a class="link" href="https://www.behance.net/nodedps" target="_blank">
                         <img class="icon" v-if="color == 'dark'" src="~/assets/images/icons/behance-light.png">
                         <img class="icon" v-else src="~/assets/images/icons/behance.png">
@@ -15,11 +25,6 @@
                         <img class="icon" v-if="color == 'dark'" src="~/assets/images/icons/twitter-light.png">
                         <img class="icon" v-else src="~/assets/images/icons/twitter.png">
                         <p class="name">Twitter</p>
-                    </a>
-                    <a class="link" href="https://www.facebook.com/node.dps/" target="_blank">
-                        <img class="icon" v-if="color == 'dark'" src="~/assets/images/icons/facebook-light.png">
-                        <img class="icon" v-else src="~/assets/images/icons/facebook.png">
-                        <p class="name">Facebook</p>
                     </a>
                 </div>
             </div>
