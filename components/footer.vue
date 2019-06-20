@@ -4,7 +4,7 @@
         <div class="content">
             <p class="intro">Network of Digital Enthusiasts<br><br>Delhi Public School<br>Site No. 1, Urban Estate<br>Sector-45, Gurgaon</p>
             <div class="contact-details">
-                <p class="contact"><a href="mailto:node.dps.ggn@gmail.com">node.dps.ggn@gmail.com</a></p>
+                <p class="contact"><a href="mailto:node@dpsgurgaon.org">node@dpsgurgaon.org</a></p>
                 <div class="links">
                     <a class="link" href="https://www.facebook.com/node.dps/" target="_blank">
                         <img class="icon" v-if="color == 'dark'" src="~/assets/images/icons/facebook-light.png">
