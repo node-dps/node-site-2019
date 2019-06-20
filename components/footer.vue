@@ -16,15 +16,15 @@
                         <img class="icon" v-else src="~/assets/images/icons/instagram.png">
                         <p class="name">Instagram</p>
                     </a>
+                    <a class="link" href="https://www.youtube.com/channel/UCNOnvJjMEGxr11RgSkcUV4g" target="_blank">
+                        <img class="icon" v-if="color == 'dark'" src="~/assets/images/icons/youtube-light.png">
+                        <img class="icon" v-else src="~/assets/images/icons/youtube.png">
+                        <p class="name">YouTube</p>
+                    </a>
                     <a class="link" href="https://www.behance.net/nodedps" target="_blank">
                         <img class="icon" v-if="color == 'dark'" src="~/assets/images/icons/behance-light.png">
                         <img class="icon" v-else src="~/assets/images/icons/behance.png">
                         <p class="name">Behance</p>
-                    </a>
-                    <a class="link" href="https://twitter.com/decode_node" target="_blank">
-                        <img class="icon" v-if="color == 'dark'" src="~/assets/images/icons/twitter-light.png">
-                        <img class="icon" v-else src="~/assets/images/icons/twitter.png">
-                        <p class="name">Twitter</p>
                     </a>
                 </div>
             </div>
