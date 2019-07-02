@@ -12,8 +12,7 @@
         <section class="info">
             <h1 class="heading">What is new?</h1>
             <p>In its 5th iteration since its inception, Alphanode 2019 is poised to be drastically bigger and better than it has ever been
-                before. We have reimagined cryptic hunts with decodenode quests: a new story-based game mode that allows players to make
-                decisions and follow different paths. We are also introducing RoboCTRL, robotics event with a fresh challenge, new robots and exciting battles every year.
+                before. We have reimagined cryptic hunts with decodenode quests: a new storyline-based game mode. We are also introducing RoboCTRL, robotics event with a fresh challenge, new robots and exciting battles every year.
             </p>
             <!--<dl>
                 <dt>RoboCTRL</dt>
