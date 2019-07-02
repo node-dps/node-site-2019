@@ -1,5 +1,5 @@
 # node-site
-[![Netlify Status](https://api.netlify.com/api/v1/badges/264302db-886d-4503-8d50-f0a2c03c4bce/deploy-status)](https://app.netlify.com/sites/nodeclub/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9c7a1dbf-fac2-4913-87b5-1069b945ebf6/deploy-status)](https://app.netlify.com/sites/main-node/deploys)
 
 > Official Node Site
 
