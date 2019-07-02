@@ -13,9 +13,9 @@
             <h1 class="heading">What is new?</h1>
             <p>In its 5th iteration since its inception, Alphanode 2019 is poised to be drastically bigger and better than it has ever been
                 before. We have reimagined cryptic hunts with decodenode quests: a new story-based game mode that allows players to make
-                decisions and follow different paths. We are also introducing four new, unique events:
+                decisions and follow different paths. We are also introducing RoboCTRL, robotics event with a fresh challenge, new robots and exciting battles every year.
             </p>
-            <dl>
+            <!--<dl>
                 <dt>RoboCTRL</dt>
                 <dd>An autonomous robotics event with a fresh challenge, new robots and exciting battles every year.</dd>
                 <dt>ScriptRoyale</dt>
@@ -24,7 +24,7 @@
                 <dd>An audio mixing event that allows you to express your artistic talent.</dd>
                 <dt>Config[x]</dt>
                 <dd>A hardware event with a twist. And a purpose.</dd>
-            </dl>
+            </dl>-->
         </section>
 
         <section class="events">
@@ -132,7 +132,7 @@
                             <div class="countdown" data-end-date="July 10, 2019"></div>
                         </a>
                     </div>
-                    <div class="event">
+                    <!--<div class="event">
                         <h1 class="name">codenode</h1>
                         <p class="brief">Competitive Programming</p>
                         <p class="tagline">#include &lt;logic.h&gt;</p>
@@ -143,7 +143,7 @@
                             Link
                             <div class="countdown" data-end-date="July 10, 2019"></div>
                         </a>
-                    </div>
+                    </div>-->
                     <div class="event">
                         <h1 class="name">ScriptRoyale</h1>
                         <p class="brief">Challenge Programming</p>
@@ -156,7 +156,7 @@
                             <div class="countdown" data-end-date="July 10, 2019"></div>
                         </a>
                     </div>
-                    <div class="event">
+                    <!--<div class="event">
                         <h1 class="name">Chorus</h1>
                         <p class="brief">Audio Mixing</p>
                         <p class="tagline">Muse to amuse.</p>
@@ -167,7 +167,7 @@
                             Prompt
                             <div class="countdown" data-end-date="July 10, 2019"></div>
                         </a>
-                    </div>
+                    </div>-->
                     <div class="event">
                         <h1 class="name">InFocus</h1>
                         <p class="brief">Moviemaking</p>
@@ -180,7 +180,7 @@
                             <div class="countdown" data-end-date="July 10, 2019"></div>
                         </a>
                     </div>
-                    <div class="event">
+                    <!--<div class="event">
                         <h1 class="name">Config[x]</h1>
                         <p class="brief">Hardware</p>
                         <p class="tagline">Enthusiasts assemble!</p>
@@ -191,7 +191,7 @@
                             Prompt
                             <div class="countdown" data-end-date="July 10, 2019"></div>
                         </a>
-                    </div>
+                    </div>-->
                     <div class="event">
                         <h1 class="name">mSway</h1>
                         <p class="brief">Online Powerpoint</p>
