@@ -207,7 +207,7 @@
             </div>
         </section>
 
-        <section class="sponsors">
+        <!--<section class="sponsors">
             <h1 class="heading">Sponsors</h1>
             <div class="logo-container">
                 <a href="" class="logo" title="">
@@ -226,7 +226,7 @@
                     <img src="~/assets/images/icons/sponsor-blank.png">
                 </a>
             </div>
-        </section>
+        </section>-->
 
         <footerComponent v-bind:color="footerColor" />
     </div>
