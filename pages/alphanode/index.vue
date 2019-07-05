@@ -254,7 +254,7 @@ export default {
     data: function(){
         return{
             navColor: 'transparent-light',
-            footerColor: 'dark'
+            footerColor: 'light'
         }
     },
     mounted() {
