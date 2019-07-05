@@ -131,7 +131,7 @@
                             <div class="countdown" data-end-date="July 10, 2019"></div>
                         </a>
                     </div>
-                    <!--<div class="event">
+                    <div class="event">
                         <h1 class="name">codenode</h1>
                         <p class="brief">Competitive Programming</p>
                         <p class="tagline">#include &lt;logic.h&gt;</p>
@@ -142,8 +142,8 @@
                             Link
                             <div class="countdown" data-end-date="July 10, 2019"></div>
                         </a>
-                    </div>-->
-                    <div class="event">
+                    </div>
+                    <!--<div class="event">
                         <h1 class="name">ScriptRoyale</h1>
                         <p class="brief">Challenge Programming</p>
                         <p class="tagline">Winner winner compile dinner.</p>
@@ -154,7 +154,7 @@
                             Prompt
                             <div class="countdown" data-end-date="July 10, 2019"></div>
                         </a>
-                    </div>
+                    </div>-->
                     <!--<div class="event">
                         <h1 class="name">Chorus</h1>
                         <p class="brief">Audio Mixing</p>
